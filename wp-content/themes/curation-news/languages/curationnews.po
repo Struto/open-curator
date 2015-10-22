@@ -1,0 +1,637 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PR News v1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-07-17 09:24:28+0000\n"
+"Last-Translator: admin <ad7@onlinerel.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: U.S.\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:10
+#@ prnews
+msgid "404 Error: Page Not Found"
+msgstr ""
+
+#: 404.php:14
+#@ prnews
+msgid "Apologies, but the page you requested could not be found."
+msgstr ""
+
+#: 404.php:15
+#: index.php:33
+#@ prnews
+msgid "Perhaps searching will help."
+msgstr ""
+
+#: comments.php:15
+#@ prnews
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:16
+#@ prnews
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:27
+#@ prnews
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:27
+#@ prnews
+msgid "Leave a Reply to"
+msgstr ""
+
+#: comments.php:30
+#@ prnews
+msgid "Cancel"
+msgstr ""
+
+#: comments.php:35
+#@ prnews
+msgid "You must be"
+msgstr ""
+
+#: comments.php:35
+#@ prnews
+msgid "logged in"
+msgstr ""
+
+#: comments.php:35
+#@ prnews
+msgid "to post a comment"
+msgstr ""
+
+#: comments.php:43
+#@ prnews
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:43
+#@ prnews
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:43
+#@ prnews
+msgid "Log out"
+msgstr ""
+
+#: comments.php:51
+#@ prnews
+msgid "Name"
+msgstr ""
+
+#: comments.php:53
+#@ prnews
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:60
+#@ prnews
+msgid "Mail"
+msgstr ""
+
+#: comments.php:62
+#@ prnews
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:63
+#@ prnews
+msgid "will not be published"
+msgstr ""
+
+#: comments.php:70
+#@ prnews
+msgid "Website"
+msgstr ""
+
+#: comments.php:72
+#@ prnews
+msgid "Your Website"
+msgstr ""
+
+#: comments.php:83
+#@ prnews
+msgid "Your Comment Here…"
+msgstr ""
+
+#: comments.php:87
+#@ prnews
+msgid "Submit Comment"
+msgstr ""
+
+#: content-gallery.php:14
+#: content-video.php:14
+#: content.php:17
+#: page-full-width.php:17
+#: page-left-sidebar.php:18
+#: page-right-sidebar.php:18
+#: page.php:14
+#@ prnews
+msgid "Pages:"
+msgstr ""
+
+#: content-gallery.php:17
+#: content-video.php:17
+#: content.php:21
+#: page-full-width.php:18
+#: page-left-sidebar.php:19
+#: page-right-sidebar.php:19
+#: page.php:15
+#@ prnews
+msgid "Edit"
+msgstr ""
+
+#: content-gallery.php:38
+#: content-video.php:38
+#: content.php:43
+#, php-format
+#@ prnews
+msgid "<i class=\"icon-chevron-sign-left\"></i> %title"
+msgstr ""
+
+#: content-gallery.php:39
+#: content-video.php:39
+#: content.php:44
+#, php-format
+#@ prnews
+msgid "%title <i class=\"icon-chevron-sign-right\"></i>"
+msgstr ""
+
+#: functions.php:11
+#@ prnews
+msgid "Top Navigation"
+msgstr ""
+
+#: functions.php:12
+#@ prnews
+msgid "Bootom Navigation"
+msgstr ""
+
+#: functions.php:107
+#@ prnews
+msgid "Loading"
+msgstr ""
+
+#: functions.php:108
+#@ prnews
+msgid "All items loaded"
+msgstr ""
+
+#: functions.php:347
+#@ prnews
+msgid "Related Posts"
+msgstr ""
+
+#: functions.php:382
+#@ prnews
+msgid "Reply"
+msgstr ""
+
+#: functions.php:386
+#@ prnews
+msgid "Comment Permalink"
+msgstr ""
+
+#: functions.php:388
+#@ prnews
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:83
+#: options.php:52
+#: searchform.php:3
+#@ prnews
+msgid "Search"
+msgstr ""
+
+#: header.php:87
+#@ prnews
+msgid "Subscribe to our RSS Feed"
+msgstr ""
+
+#: header.php:90
+#@ prnews
+msgid "Find us on Google+"
+msgstr ""
+
+#: header.php:94
+#@ prnews
+msgid "Find us on Linkedin"
+msgstr ""
+
+#: header.php:97
+#@ prnews
+msgid "Find us on Pinterest"
+msgstr ""
+
+#: header.php:100
+#@ prnews
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: header.php:103
+#@ prnews
+msgid "Find us on Facebook"
+msgstr ""
+
+#: inc/bootstrap-carousel.php:51
+#@ prnews
+msgid "Slider details"
+msgstr ""
+
+#: inc/bootstrap-carousel.php:67
+#@ prnews
+msgid "Button text (80 car. max length): "
+msgstr ""
+
+#: inc/bootstrap-carousel.php:73
+#@ prnews
+msgid "Button Link to page or post: "
+msgstr ""
+
+#: inc/bootstrap-carousel.php:112
+#@ prnews
+msgid "Slider Options"
+msgstr ""
+
+#: inc/bootstrap-carousel.php:143
+#@ prnews
+msgid "Add to a slider"
+msgstr ""
+
+#: inc/bootstrap-carousel.php:143
+#@ prnews
+msgid "Create Slider"
+msgstr ""
+
+#: inc/options-framework.php:173
+#: inc/options-framework.php:388
+#@ options_framework_theme
+msgid "Theme Options"
+msgstr ""
+
+#: inc/options-framework.php:204
+#@ options_framework_theme
+msgid "Clear"
+msgstr ""
+
+#: inc/options-framework.php:205
+#@ options_framework_theme
+msgid "Default"
+msgstr ""
+
+#: inc/options-framework.php:206
+#@ options_framework_theme
+msgid "Select Color"
+msgstr ""
+
+#: inc/options-framework.php:251
+#@ options_framework_theme
+msgid "Save Options"
+msgstr ""
+
+#: inc/options-framework.php:252
+#@ options_framework_theme
+msgid "Restore Defaults"
+msgstr ""
+
+#: inc/options-framework.php:252
+#@ options_framework_theme
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: inc/options-framework.php:284
+#@ options_framework_theme
+msgid "Default options restored."
+msgstr ""
+
+#: inc/options-framework.php:338
+#@ options_framework_theme
+msgid "Options saved."
+msgstr ""
+
+#: inc/options-media-uploader.php:51
+#@ options_framework_theme
+msgid "No file chosen"
+msgstr ""
+
+#: inc/options-media-uploader.php:54
+#: inc/options-media-uploader.php:111
+#@ options_framework_theme
+msgid "Upload"
+msgstr ""
+
+#: inc/options-media-uploader.php:56
+#: inc/options-media-uploader.php:112
+#@ options_framework_theme
+msgid "Remove"
+msgstr ""
+
+#: inc/options-media-uploader.php:59
+#@ options_framework_theme
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/options-media-uploader.php:83
+#@ options_framework_theme
+msgid "View File"
+msgstr ""
+
+#: inc/options-sanitize.php:232
+#@ options_framework_theme
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options-sanitize.php:233
+#@ options_framework_theme
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options-sanitize.php:234
+#@ options_framework_theme
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options-sanitize.php:235
+#@ options_framework_theme
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options-sanitize.php:248
+#@ options_framework_theme
+msgid "Top Left"
+msgstr ""
+
+#: inc/options-sanitize.php:249
+#@ options_framework_theme
+msgid "Top Center"
+msgstr ""
+
+#: inc/options-sanitize.php:250
+#@ options_framework_theme
+msgid "Top Right"
+msgstr ""
+
+#: inc/options-sanitize.php:251
+#@ options_framework_theme
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options-sanitize.php:252
+#@ options_framework_theme
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options-sanitize.php:253
+#@ options_framework_theme
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options-sanitize.php:254
+#@ options_framework_theme
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options-sanitize.php:255
+#@ options_framework_theme
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options-sanitize.php:256
+#@ options_framework_theme
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options-sanitize.php:269
+#@ options_framework_theme
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options-sanitize.php:270
+#@ options_framework_theme
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options-sanitize.php:344
+#@ options_framework_theme
+msgid "Normal"
+msgstr ""
+
+#: inc/options-sanitize.php:345
+#@ options_framework_theme
+msgid "Italic"
+msgstr ""
+
+#: inc/options-sanitize.php:346
+#@ options_framework_theme
+msgid "Bold"
+msgstr ""
+
+#: inc/options-sanitize.php:347
+#@ options_framework_theme
+msgid "Bold Italic"
+msgstr ""
+
+#: index.php:29
+#@ prnews
+msgid "No Items Found"
+msgstr ""
+
+#: index.php:43
+#@ prnews
+msgid "&laquo; Previous"
+msgstr ""
+
+#: index.php:44
+#@ prnews
+msgid "Next &raquo;"
+msgstr ""
+
+#: options.php:22
+#@ prnews
+msgid "General Settings"
+msgstr ""
+
+#: options.php:25
+#@ prnews
+msgid "Small Logo"
+msgstr ""
+
+#: options.php:26
+#@ prnews
+msgid "Logo height should be 40px. Width is flexible. Leave blank to use site title text."
+msgstr ""
+
+#: options.php:31
+#@ prnews
+msgid "Large Logo"
+msgstr ""
+
+#: options.php:32
+#@ prnews
+msgid "Select a file to appear as the large logo for your site if you chose to have the logo below the navigation. The recommended maximum dimensions (if you plan on using a 728x90 ad) for this logo are 222x90."
+msgstr ""
+
+#: options.php:37
+#@ prnews
+msgid "Custom Favicon"
+msgstr ""
+
+#: options.php:38
+#@ prnews
+msgid "Upload a 16x16px PNG/GIF image that will represent your website's favicon."
+msgstr ""
+
+#: options.php:43
+#@ prnews
+msgid "Custom CSS"
+msgstr ""
+
+#: options.php:50
+#@ prnews
+msgid "Social Media Settings"
+msgstr ""
+
+#: options.php:58
+#@ prnews
+msgid "RSS"
+msgstr ""
+
+#: options.php:64
+#: widgets/facebook.php:66
+#@ prnews
+msgid "Facebook"
+msgstr ""
+
+#: options.php:70
+#@ prnews
+msgid "Twitter"
+msgstr ""
+
+#: options.php:76
+#@ prnews
+msgid "Pinterest"
+msgstr ""
+
+#: options.php:82
+#@ prnews
+msgid "Google Plus"
+msgstr ""
+
+#: options.php:88
+#@ prnews
+msgid "Linkedin"
+msgstr ""
+
+#: options.php:95
+#@ prnews
+msgid "Ad Management"
+msgstr ""
+
+#: options.php:98
+#@ prnews
+msgid "Attention"
+msgstr ""
+
+#: options.php:104
+#@ prnews
+msgid "728x90 - 750x100 Ad Code"
+msgstr ""
+
+#: options.php:111
+#@ prnews
+msgid "222x90 - 200x100 Ad Code"
+msgstr ""
+
+#: options.php:119
+#@ prnews
+msgid "Footer Info"
+msgstr ""
+
+#: options.php:123
+#@ prnews
+msgid "Tracking Code"
+msgstr ""
+
+#: options.php:129
+#@ prnews
+msgid "Copyright Text"
+msgstr ""
+
+#: sidebar-left.php:3
+#@ prnews
+msgid "Categories"
+msgstr ""
+
+#: sidebar-right.php:3
+#@ prnews
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:6
+#@ prnews
+msgid "Posts By: "
+msgstr ""
+
+#: sidebar.php:10
+#@ prnews
+msgid "Search results: "
+msgstr ""
+
+#: sidebar.php:14
+#@ prnews
+msgid "Posts in category: "
+msgstr ""
+
+#: sidebar.php:18
+#@ prnews
+msgid "Browsing posts tagged: "
+msgstr ""
+
+#: sidebar.php:22
+#@ prnews
+msgid "Browsing archived posts: "
+msgstr ""
+
+#: widgets/ad.php:17
+#@ prnews_ad_widget
+msgid "A widget that displays any  ad."
+msgstr ""
+
+#: widgets/ad.php:23
+#@ prnews_ad_widget
+msgid "Ad Widget"
+msgstr ""
+
+#: widgets/ad.php:48
+#@ prnews
+msgid "Enter ad code here"
+msgstr ""
+
+#: widgets/facebook.php:19
+#@ prnews_facebook_widget
+msgid "A widget that displays a Facebook Like Box."
+msgstr ""
+
+#: widgets/facebook.php:25
+#@ prnews_facebook_widget
+msgid "Facebook Widget"
+msgstr ""
+

@@ -1,0 +1,56 @@
+
+==================
+1.0.5 - 2013/10/12
+==================
+
+- Added right sidebar on single post pages
+- New post option: Switch on/off footer widgets on single post pages
+- Fix typos in functions.php and some translation method calls
+- Changed style.css integration to use get_stylesheet_uri() to fix a problem when using child themes
+- CSS improvements and bug fixes
+
+
+==================
+1.0.4 - 2013/07/29
+==================
+
+- completely revamped main menu
+- Flyout/Dropdown Submenus
+- Off-Screen Menu on Mobile Devices
+- Footer Widgets are sorted into columns
+- CSS improvements and bug fixes
+
+
+==================
+1.0.3 - 2013/07/22
+==================
+
+- Fix minor CSS bugs
+
+
+==================
+1.0.2 - 2013/07/19
+==================
+
+- Remove description meta from header
+- All stylesheets (other than default style.css) must be enqueued
+- Call to wp_nav_menu() must use 'theme_location', rather than 'menu' parameter
+- All header/footer script calls must be enqueued
+- Remove function_exists() conditional wrapper from register_sidebar() and any other function introduced prior to WordPress 3.3
+- All function calls in functions.php must be wrapped in a callback and hooked into an appropriate hook
+- Pages must support comments
+
+
+==================
+1.0.1 - 2013/07/15
+==================
+
+- Fix non-valid HTML in content-postlist.php
+- Switch License to GNU General Public License (GPL) 3.0
+
+
+==================
+1.0.0 - 2013/06/19
+==================
+
+- Initial release
