@@ -1,8 +1,10 @@
 /* ------------------------------------------------------------------------- *
  *
+ * Developer: Archie Makuwa
+ * Struto Ltd.
  *
- *
- *
+ * Custom Stylesheets in the child theme should be added to this file.
+ * The CSS overwrites the default styles in the parent theme
 /* ------------------------------------------------------------------------- */
 
 
@@ -12,8 +14,9 @@
 /* ------------------------------------------------------------------------- */
 
 #header {
-    background: #f7f7f7;
+    background: #f7f7f7 !important;
 }
+
 .site-description {
     color: #686868;
 }
