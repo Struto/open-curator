@@ -17,10 +17,26 @@
     background: #f7f7f7 !important;
 }
 
+#header .pad {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
 .site-description {
     color: #686868;
 }
 
+.site-title {
+    padding: 0;
+}
+
+.site-title a img {
+    max-height: 80px;
+}
+
+#nav-header .nav-wrap{
+    background: #33363b;
+}
 
 
 

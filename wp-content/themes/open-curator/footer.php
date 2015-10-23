@@ -70,7 +70,7 @@
 
                     <?php if ( !ot_get_option( 'credit' ) ): ?>
                         <div id="credit">
-                            <p><?php _e('Theme by','curation-hue'); ?> <a href="http://www.struto.co.uk" rel="nofollow">Struto Ltd.</a>.</p>
+                            <p><?php _e('Developed by','curation-hue'); ?> <a href="http://www.struto.co.uk" rel="nofollow">Struto Ltd.</a>.</p>
                         </div><!--/#credit-->
                     <?php endif; ?>
 
