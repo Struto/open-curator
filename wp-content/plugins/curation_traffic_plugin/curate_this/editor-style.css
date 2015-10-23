@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+html .mceContentBody {max-width:100% !important;
+height: 500px;
+}
+img { padding: 0 25px 25px 0;}
+blockquote {font-style: italic; font-size: 15px;}
+#content_ifr { height; 455px;}

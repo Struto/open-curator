@@ -1,0 +1,84 @@
+ function addText(inP) {
+
+            var overall_text = "";
+            //overall_text = $("#content").val();
+			overall_text = tinyMCE.activeEditor.getContent({format : 'raw'});
+			overall_text = overall_text.replace('<p><br data-mce-bogus="1"></p>','');
+			overall_text = overall_text.replace('<p>[curated-content]','[curated-content]<p>');
+			overall_text = overall_text.replace('[/curated-content]</p>','</p>[/curated-content]');
+			overall_text = overall_text.replace('<p> </p>','');
+			overall_text = overall_text.replace('<p></p>','');
+			var nbsp = unescape("%a0");
+			overall_text = overall_text.replace(nbsp,'');
+			overall_text = overall_text.replace(/& nbsp;/g, '');
+            overall_len = overall_text.length;
+
+//jQuery("#content").text('<img src="' + imgArray[0] + '" class="alignleft" />[curated_content]' + p1 + '[/curated_content]'); 
+//tinyMCE.activeEditor.execCommand('mceSetContent', false, jQuery("#content").text());
+
+            startOfCuratedText = overall_text.indexOf("[curated-content]");
+            endOfCuratedText = overall_text.indexOf("[/curated-content]");
+            before_cur_text = overall_text.substring(0, startOfCuratedText);
+            after_cur_text = overall_text.substring(endOfCuratedText + 18, overall_len);
+
+            var current_curated_content = "";
+            current_curated_content = overall_text.substring(startOfCuratedText, endOfCuratedText);
+
+            curated_length = current_curated_content.length;
+            current_curated_content = overall_text.substr(startOfCuratedText + 17, curated_length - 17);
+
+            var addToStartText = "";
+            var isAddtoChecked = false;
+            isAddtoChecked = $('#add_to_chbx').attr('checked');
+            var isPlaceCursor = false;
+            isPlaceCursor = $('#place_cursor').attr('checked');
+            var cursorLocation = 0;
+            cursorLocation = $("#content").getCursorPosition();
+            if(isPlaceCursor)
+            {
+                before_cur_text = overall_text.substring(0, cursorLocation );
+                after_cur_text = overall_text.substring(cursorLocation , overall_len);
+                $("#txt_cur").val(before_cur_text + '[curated-content]' + inP + '[/curated-content]' + after_cur_text);
+            }
+            
+            
+            if(inP.length <= 0)
+            {
+                $("#txt_cur").val(before_cur_text + "" + after_cur_text);
+                return;
+            }
+            if(inP == 'all')
+               {
+                   var combinedText = '';
+                   i=0;
+                   $.each(all_paragraphs, function(index, value) {
+                       if(this.length > 0)
+                       {
+                            if(i>0)
+                                combinedText = combinedText + '\n\n';
+
+                           combinedText = combinedText + this;
+                            i++;                           
+                       }
+                   });
+                   
+					$("#txt_cur").val(before_cur_text + '[curated-content]' + combinedText + '[/curated-content]' + after_cur_text);
+                   return;
+               }
+            if (isAddtoChecked) {
+                addToStartText = current_curated_content;
+                var length = addToStartText.length;
+                if (length > 0) {
+                    addToStartText = addToStartText;
+                }
+                //$("#txt_cur").val(before_cur_text + '[curated-content]' + addToStartText + inP + '[/curated-content]' + after_cur_text);
+				jQuery("#content").text(before_cur_text + '[curated-content]' + addToStartText + '<p>' + inP + '</p>' + '[/curated-content]' + after_cur_text); 
+				tinyMCE.activeEditor.execCommand('mceSetContent', false, jQuery("#content").text());
+            }
+            else {
+                //$("#txt_cur").val(before_cur_text + '[curated-content]' + inP + '[/curated-content]' + after_cur_text);
+				jQuery("#content").text(before_cur_text + '[curated-content]' + inP + '[/curated-content]' + after_cur_text); 
+				tinyMCE.activeEditor.execCommand('mceSetContent', false, jQuery("#content").text());
+            }
+
+        }

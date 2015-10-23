@@ -1,0 +1,30 @@
+     function changeImage(inCurImageNumber, inSRC)
+      {     
+            //alert(inCurImageNumber + ' - ' + inSRC);                    
+            var overall_text = "";
+            var inSRCIndex = 0;
+			//overall_text = $("#txt_cur").val();
+			overall_text = tinyMCE.activeEditor.getContent({format : 'raw'});
+			overall_text = overall_text.replace('<p><br data-mce-bogus="1"></p>','');
+
+            inSRCIndex = overall_text.indexOf(imgArray[inCurImageNumber]);
+			var isthisimage = tinyMCE.activeEditor.dom.select('img');
+			var thisSRC = isthisimage[0].attributes[0].nodeValue;
+            if(inSRCIndex > 0)           
+            {
+                overall_text = overall_text.replace(imgArray[inCurImageNumber],inSRC);
+//                $("#txt_cur").val(overall_text);
+				jQuery("#content").text(overall_text); 
+				tinyMCE.activeEditor.execCommand('mceSetContent', false, jQuery("#content").text());
+
+            }
+            else
+            {
+                // since the image doesn't exist lets add it to the front
+                //overall_text = '<img scr="' + inSRC + '" class="'+ currentAlign + '" />' + overall_text;
+				//jQuery("#content").text(overall_text); 
+				jQuery("#content").text('<img src="' + inSRC + '" class="alignleft" />' + overall_text); 
+				tinyMCE.activeEditor.execCommand('mceSetContent', false, jQuery("#content").text());
+                //$("#txt_cur").val(overall_text);
+            }
+    }
