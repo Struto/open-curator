@@ -6,8 +6,7 @@ jQuery( document ).ready(function($) {
 
 
     /* Add flexslider with auto scroll */
-    var flex = $('.flexslider').detach(); //detach orignal slider
-    
+
 
 
     // Rotate Featured Home Page Posts
