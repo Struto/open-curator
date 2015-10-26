@@ -58,9 +58,7 @@ class AlxPosts extends WP_Widget {
 				<?php if(curationhue_thumbnail(get_the_ID()) !=''): ?>
 					<?php echo curationhue_thumbnail(get_the_ID()); ?>
 					<?php else: ?>
-                        <!--
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title(); ?>" />
-						-->
+						<img src="<?php echo get_stylesheet_uri(); ?>/img/thumb-medium.png" alt="<?php the_title(); ?>" />
 					<?php endif; ?>
 					<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fa fa-play"></i></span>'; ?>
 					<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fa fa-volume-up"></i></span>'; ?>
