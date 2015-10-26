@@ -169,6 +169,10 @@ article.format-video .entry-inner img {
     font-family: "ralewayregular";
 }
 
+.s2 #text-2 {
+    background-color: #9F6FAD;
+}
+
 
 
 /* ------------------------------------------------------------------------- *
@@ -323,10 +327,7 @@ footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
 @media (min-width:720px) and (max-width:860px) {
 
     #footer-widgets h3 {
-        height: 155px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        height: 190px;
     }
 }
 
