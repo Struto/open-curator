@@ -128,6 +128,14 @@ a:hover {
     clear: both;
 }
 
+.post-title a {
+    color: #4bb3d2;
+}
+
+.post-title a:hover {
+    color: #46a879;
+}
+
 
 
 
@@ -141,6 +149,11 @@ a:hover {
     line-height: 32px;
     margin: 0 0 5px;
     padding: 0;
+}
+
+.s1 .sidebar-top,
+.s1 .sidebar-toggle {
+    background: #39f;
 }
 
 .s2 .sidebar-top,
