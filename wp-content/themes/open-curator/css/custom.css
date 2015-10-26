@@ -178,7 +178,12 @@ article.format-video .entry-inner img {
 #footer-widgets h3 {
     display: block;
     height: 95px;
-    margin-bottom: 15pxpx;
+    margin-bottom: 15px;
+}
+
+#footer-widgets .textwidget p {
+    display: block;
+    height: 125px;
 }
 
 
@@ -266,3 +271,47 @@ textarea.hs-input.error {
 footer ul.social-links li a { }
 
 footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  Responsive Custom Styles
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 1240px) {
+
+    #footer-widgets .textwidget p {
+        height: 145px;
+    }
+
+}
+
+
+
+@media (max-width: 1080px) {
+
+    #footer-widgets .textwidget p {
+        height: 180px;
+    }
+
+}
+
+
+
+@media (max-width: 920px) {
+
+    #footer-widgets .textwidget p {
+        height: 220px;
+    }
+
+}
+
+
+
+@media (max-width: 719px) {
+
+    #footer-widgets .textwidget p {
+        height: auto;
+    }
+
+}
