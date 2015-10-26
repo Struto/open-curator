@@ -10,6 +10,74 @@
 
 
 /* ------------------------------------------------------------------------- *
+ *  Load Custom Fonts
+/* ------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff'),
+    url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont.woff') format('woff'),
+    url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ------------------------------------------------------------------------- *
+ *  Init and Overwrite Fonts
+/* ------------------------------------------------------------------------- */
+
+body {
+    font-family: "ralewaylight";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-family: "ralewayregular";
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h5 a {
+    font-family: "ralewayregular";
+}
+
+a {
+    color: #4bb3d2;
+    opacity: 1;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- *
  *  Custom Desktop Styles
 /* ------------------------------------------------------------------------- */
 
@@ -18,7 +86,7 @@
 }
 
 #header .pad {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     padding-top: 30px;
 }
 
@@ -38,6 +106,28 @@
     background: #33363b;
 }
 
+.entry p,
+.entry dd {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer ul.social-links li a {
+
+}
+
+footer ul.social-links li a.social-tooltip i.fa.fa-linkedin {
+
+}
 
 
 /* ------------------------------------------------------------------------- *
