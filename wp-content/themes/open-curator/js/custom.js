@@ -5,7 +5,13 @@
 jQuery( document ).ready(function($) {
 
 
+    /* Add flexslider with auto scroll */
+    var flex = $('.flexslider').detach(); //detach orignal slider
+    
+
+
     // Rotate Featured Home Page Posts
+    /*
     $(".slides > div:gt(0)").hide();
 
     setInterval(function() {
@@ -16,9 +22,5 @@ jQuery( document ).ready(function($) {
             .end()
             .appendTo('.slides');
     },  3000);
-
-
-
-
-
+    */
 });
