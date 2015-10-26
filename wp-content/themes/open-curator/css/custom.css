@@ -203,6 +203,50 @@ textarea.hs-input.error {
 
 
 /* ------------------------------------------------------------------------- *
+ *  Pre-Footer Custom Styles
+/* ------------------------------------------------------------------------- */
+
+#link-to-site {
+    background: #6CB0D5;
+    padding: 40px 0;
+}
+
+.official-site {
+    text-align: center;
+}
+
+.official-site h2,
+.official-site a {
+    color: #fff !important;
+}
+
+.official-site h2 {
+    font-family: "ralewayregular";
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.official-site a {
+    background-color: #D94D4C;
+    display: block;
+    margin: 20px auto 0;
+    opacity: 1;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 120px;
+    width: 120px;
+}
+
+.official-site a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------- *
  *  Footer Custom Styles
 /* ------------------------------------------------------------------------- */
 

@@ -47,7 +47,18 @@
         </nav><!--/#nav-footer-->
     <?php endif; ?>
 
+    <section class="container" id="link-to-site">
+
+        <div class="official-site">
+            <h2>Visit the Official Open Website</h2>
+            <a href="http://www.opentoinvest.com" rel="nofollow">View Website</a>
+        </div>
+
+    </section>
+
+
     <section class="container" id="footer-bottom">
+
         <div class="container-inner">
 
             <a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
