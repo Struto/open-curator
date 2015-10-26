@@ -147,6 +147,10 @@ article.format-video .entry-inner img {
  *  Sidebar Custom Styles
 /* ------------------------------------------------------------------------- */
 
+.sidebar .widget {
+    padding: 30px;
+}
+
 .widget > h3 {
     font-size: 22px;
     font-weight: 400;
