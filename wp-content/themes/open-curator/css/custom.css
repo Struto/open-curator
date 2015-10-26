@@ -141,9 +141,11 @@ article.format-video .entry-inner img {
 }
 
 #page {
-    background-image: url("../img/open-magazine-background-image.jpg");
+    background: url("../img/open-magazine-background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: 50% 50%;
 }
 
 
