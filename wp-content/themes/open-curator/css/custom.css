@@ -140,6 +140,12 @@ article.format-video .entry-inner img {
     display: none;
 }
 
+#page {
+    background-image: url("../img/open-magazine-background-image.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 
 
 
@@ -188,6 +194,7 @@ article.format-video .entry-inner img {
     display: block;
     font-family: "ralewaylight";
     font-size: 16px;
+    margin-top: 10px;
     padding: 5px ;
     line-height: 24px;
     text-align: center;
