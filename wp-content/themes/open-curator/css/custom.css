@@ -171,6 +171,17 @@ article.format-video .entry-inner img {
 
 
 
+/* ------------------------------------------------------------------------- *
+ *  Footer CTAs
+/* ------------------------------------------------------------------------- */
+
+#footer-widgets h3 {
+    display: block;
+    height: 95px;
+    margin-bottom: 15pxpx;
+}
+
+
 
 /* ------------------------------------------------------------------------- *
  * Sidebar Blog Subsciption
@@ -248,23 +259,10 @@ textarea.hs-input.error {
 
 
 
-
-
 /* ------------------------------------------------------------------------- *
  *  Footer Custom Styles
 /* ------------------------------------------------------------------------- */
 
-footer ul.social-links li a {
+footer ul.social-links li a { }
 
-}
-
-footer ul.social-links li a.social-tooltip i.fa.fa-linkedin {
-
-}
-
-
-
-/* ------------------------------------------------------------------------- *
- *  Custom Tablet & Mobile Styles
-/* ------------------------------------------------------------------------- */
-
+footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
