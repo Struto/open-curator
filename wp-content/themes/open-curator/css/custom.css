@@ -136,6 +136,10 @@ a:hover {
     color: #46a879 !important;
 }
 
+article.format-video .entry-inner img {
+    display: none;
+}
+
 
 
 
