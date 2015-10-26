@@ -39,13 +39,6 @@
         </section><!--/.container-->
     <?php } ?>
 
-    <section class="container" id="link-to-site">
-        <div class="official-site">
-            <h2>Visit the Official Open Website</h2>
-            <a href="http://www.opentoinvest.com" rel="nofollow">View Website</a>
-        </div>
-    </section>
-
     <?php if ( has_nav_menu( 'footer' ) ): ?>
         <nav class="nav-container group" id="nav-footer">
             <div class="nav-toggle"><i class="fa fa-bars"></i></div>
@@ -53,6 +46,13 @@
             <div class="nav-wrap"><?php wp_nav_menu( array('theme_location'=>'footer','menu_class'=>'nav container group','container'=>'','menu_id'=>'','fallback_cb'=>false) ); ?></div>
         </nav><!--/#nav-footer-->
     <?php endif; ?>
+
+    <section class="container" id="link-to-site">
+        <div class="official-site">
+            <h2>Visit the Official Open Website</h2>
+            <a href="http://www.opentoinvest.com" rel="nofollow">View Website</a>
+        </div>
+    </section>
 
     <section class="container" id="footer-bottom">
 
