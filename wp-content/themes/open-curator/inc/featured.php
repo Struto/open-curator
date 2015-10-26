@@ -39,7 +39,7 @@ $featured = new WP_Query(
 						controlNav: true,
 						pauseOnHover: true,
                         slideshow: true,
-                        slideshowSpeed: 7000,
+                        slideshowSpeed: 5000,
 						animationSpeed: 400,
 						smoothHeight: true,
 						touch: false

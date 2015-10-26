@@ -5,7 +5,7 @@
 jQuery( document ).ready(function($) {
 
 
-    /* Add flexslider with auto scroll */
+    // Custom JS here
 
 
 
