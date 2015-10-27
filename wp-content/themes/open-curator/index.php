@@ -20,22 +20,17 @@
 
 
                 <!-- Homepage Addional Widgets -->
-                <?php
-
-                    //if ( function_exists() ):
-                        if ( is_home() ) {
+                <?php if ( is_home() ) { ?>
+                    <div class="home-bottom">
+                        <?php
                             dynamic_sidebar( 'homebotttomarea' );
-                        }
-
-                    //endif;
-
-
-                ?>
-                <h3>Did something appear above?</h3>
+                    } else {
+                        echo " ";
+                    } ?>
+                   </div>
                 <!-- Homepage end of additional widgets -->
+                <?php endif; ?>
 
-
-            <?php endif; ?>
 
         </div><!--/.pad-->
 
