@@ -439,6 +439,12 @@ footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
 
 @media (max-width:719px) {
 
+    .home-bottom #alxposts-2 ul.alx-posts li,
+    .home-bottom #alxposts-3 ul.alx-posts li {
+        height: auto;
+        width: 100% !important;
+    }
+
     #footer-widgets h3 {
         height: auto;
     }
