@@ -209,8 +209,15 @@ article.format-video .entry-inner img {
  *   CTAs
 /* ------------------------------------------------------------------------- */
 
-.home-bottom {
+.home-bottom { }
 
+.home-bottom h2.widgettitle {
+    display: block;
+    font-family: "ralewayregular";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 30px 0 0;
 }
 
 .home-bottom #alxposts-2 ul.alx-posts li,
