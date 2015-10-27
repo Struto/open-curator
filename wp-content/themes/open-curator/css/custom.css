@@ -94,16 +94,16 @@ a:hover {
     padding: 0 !important;
 }
 
-.site-title a {
-    color: #000;
-}
-
 .site-description {
     color: #686868;
 }
 
 .site-title {
     padding: 0;
+}
+
+.site-title a {
+    color: #000;
 }
 
 .site-title a img {
