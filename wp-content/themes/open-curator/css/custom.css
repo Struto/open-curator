@@ -199,7 +199,22 @@ article.format-video .entry-inner img {
     background-color: #9F6FAD;
 }
 
-.s2 #text-11 h3 {
+.s2 #text-13 {
+    background-color: #8bac5f;
+}
+
+.s2 #text-5 {
+    background-color: #d74c4d;
+}
+
+.s2 #text-6 {
+    background-color: #e7a438;
+}
+
+.s2 #text-11 h3,
+.s2 #text-13 h3,
+.s2 #text-5 h3,
+.s2 #text-6 h3 {
     color: #fff
 }
 
