@@ -31,7 +31,7 @@ function theme_enqueue_styles() {
  */
 function posts_on_homepage( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 2 );
+        $query->set( 'posts_per_page', 4 );
     }
 }
 add_action( 'pre_get_posts', 'posts_on_homepage' );

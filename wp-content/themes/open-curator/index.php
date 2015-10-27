@@ -25,8 +25,6 @@
                     //if ( function_exists() ):
                         if ( is_home() ) {
                             dynamic_sidebar( 'homebotttomarea' );
-                        } else {
-                            echo "No wiget";
                         }
 
                     //endif;
