@@ -90,6 +90,10 @@ a:hover {
     padding-top: 30px;
 }
 
+.page-title {
+    padding: 0 !important;
+}
+
 .site-title a {
     color: #000;
 }
