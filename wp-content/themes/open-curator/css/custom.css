@@ -217,7 +217,14 @@ article.format-video .entry-inner img {
 .home-bottom #alxposts-3 ul.alx-posts li {
     display: block;
     float: left;
-    width: 33.33% !important;
+    height: 260px;
+    margin-right: 10px;
+    width: calc(33.33% - 20px) !important;
+}
+
+.home-bottom #alxposts-2 ul.alx-posts li:last-child,
+.home-bottom #alxposts-3 ul.alx-posts li:last-child {
+    margin-right: 0;
 }
 
 
