@@ -8,49 +8,17 @@
 
             <?php get_template_part('inc/featured'); ?>
 
+            <?php if ( have_posts() ) : ?>
 
+                <div class="post-list group">
+                    <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
+                        <?php get_template_part('content'); ?>
+                        <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
+                </div><!--/.post-list-->
 
-            <?php if( is_home() ) : ?>
-
-                <?php
-                    $args = array(
-                        'post_type' => 'post',
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'category',
-                                'field'    => 'slug',
-                                'terms'    => 'featured',
-                            ),
-                        )
-                    );
-                    $the_query = new WP_Query( $args );
-                ?>
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    <div class="post-list group">
-                        <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
-                            <?php get_template_part('content'); ?>
-                            <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
-                    </div><!--/.post-list-->
-                    <?php get_template_part('inc/pagination'); ?>
-                <?php endwhile; ?>
-                <!-- end of the loop -->
-
-                <!-- pagination here -->
-
-                <?php wp_reset_postdata(); ?>
-
-            <?php else : ?>
-
-                <?php if ( have_posts() ) : ?>
-                    <div class="post-list group">
-                        <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
-                            <?php get_template_part('content'); ?>
-                            <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
-                    </div><!--/.post-list-->
                 <?php get_template_part('inc/pagination'); ?>
-            <?php endif; ?>
 
-
+            <?php //endif; ?>
 
 
             <!-- Homepage Addional Widgets -->
