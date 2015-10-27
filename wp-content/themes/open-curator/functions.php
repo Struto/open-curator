@@ -9,9 +9,9 @@
 
 
 
-/*
+/**
  * Add default parent theme CSS
- *
+ * @Archie22is
  */
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
@@ -23,9 +23,24 @@ function theme_enqueue_styles() {
 }
 
 
-/*
+
+/**
+ * Reducing the number of default posts on the home page
+ * Source: http://stackoverflow.com/a/22943406
+ * @Archie22is
+ */
+function posts_on_homepage( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 2 );
+    }
+}
+add_action( 'pre_get_posts', 'posts_on_homepage' );
+
+
+
+/**
  * Load theme files
- *
+ * @Archie22is
  */
 
 if ( ! function_exists( 'alx_load' ) ) {

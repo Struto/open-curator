@@ -17,7 +17,21 @@
 			</div><!--/.post-list-->
 		
 			<?php get_template_part('inc/pagination'); ?>
-			
+
+
+            <!-- Homepage Addional Widgets -->
+            <?php
+
+
+
+
+
+
+
+            ?>
+            <!-- Homepage end of additional widgets -->
+
+
 		<?php endif; ?>
 		
 	</div><!--/.pad-->
