@@ -38,6 +38,7 @@ if(function_exists('ybiproducts_customize_register'))
 		<?php if (ot_get_option('excerpt-length') != '0'): ?>
 		<div class="entry excerpt">				
 			<?php the_excerpt(); ?>
+            <a href="<?php the_permalink();?>" class="read-more">Read More</a>
 		</div><!--/.entry-->
 		<?php endif; ?>
 		
