@@ -218,6 +218,12 @@ article.format-video .entry-inner img {
     color: #fff
 }
 
+.s2 #text-13 p,
+.s2 #text-5 p,
+.s2 #text-6 p {
+    color: #FFF;
+}
+
 .s2 #text-11 .textwidget a {
     border: 2px solid #fff;
     border-radius: 4px;
