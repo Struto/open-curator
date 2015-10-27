@@ -17,8 +17,10 @@
                         'post_type' => 'post',
                         'tax_query' => array(
                             array(
-                                'taxonomy' => 'featured'
-                            )
+                                'taxonomy' => 'category',
+                                'field'    => 'slug',
+                                'terms'    => 'featured',
+                            ),
                         )
                     );
                     $the_query = new WP_Query( $args );
