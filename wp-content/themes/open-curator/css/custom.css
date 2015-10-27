@@ -223,12 +223,11 @@ article.format-video .entry-inner img {
 
 .home-bottom #alxposts-2 ul.alx-posts li,
 .home-bottom #alxposts-3 ul.alx-posts li {
-    border-right: 1px solid red;
+    /* border-right: 1px solid red; */
     display: block;
     float: left;
     height: 260px;
-    margin-right: 5px;
-    padding-right: 5px;
+    margin: 0 10px;
     width: calc(33.33% - 20px) !important;
 }
 
