@@ -90,8 +90,13 @@ a:hover {
     padding-top: 30px;
 }
 
+.home .page-title {
+    padding-top: 10px;
+    padding-bottom: 0 !important;
+}
+
 .page-title {
-    padding: 0 !important;
+    /* padding: 0 !important; */
 }
 
 .site-description {
@@ -159,12 +164,13 @@ article.format-video .entry-inner img {
 
 
 
+
 /* ------------------------------------------------------------------------- *
  *  Sidebar Custom Styles
 /* ------------------------------------------------------------------------- */
 
 .sidebar .widget {
-    padding: 30px;
+    padding: 20px !important;
 }
 
 .widget > h3 {
