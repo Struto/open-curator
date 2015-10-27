@@ -90,6 +90,10 @@ a:hover {
     padding-top: 30px;
 }
 
+.site-title a {
+    color: #000;
+}
+
 .site-description {
     color: #686868;
 }
