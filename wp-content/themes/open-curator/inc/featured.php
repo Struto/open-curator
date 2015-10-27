@@ -34,11 +34,10 @@ $featured = new WP_Query(
 					jQuery('#flexslider-featured').flexslider({
 						animation: "slide",
 						useCSS: false, // Fix iPad flickering issue
-						slideshow: false,
+						slideshow: true,
 						directionNav: true,
 						controlNav: true,
 						pauseOnHover: true,
-                        slideshow: true,
                         slideshowSpeed: 5000,
 						animationSpeed: 400,
 						smoothHeight: true,
