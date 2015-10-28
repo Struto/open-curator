@@ -3,8 +3,9 @@
 	<?php if ( is_home() ) : ?>
         <!--
 		<h2><?php //echo alx_blog_title(); ?></h2>
-		-->
-        <img style="width:180px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/OPEN-standard-logo.png" alt="Open logo"/>
+        <img style="width:180px;" src="<?php //echo get_stylesheet_directory_uri(); ?>/img/OPEN-standard-logo.png" alt="Open logo"/>
+        -->
+        <?php echo ""; ?>
 
 	<?php elseif ( is_single() ): ?>
 		<ul class="meta-single group">

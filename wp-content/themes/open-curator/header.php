@@ -14,6 +14,7 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Facebook Graph | DISABLED
 <div id="fb-root"></div>
 <script>
     (function(d, s, id) {
@@ -24,6 +25,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+-->
 
 <div id="wrapper">
 
