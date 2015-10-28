@@ -238,6 +238,16 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
+.s1 #alxposts-5 {
+    padding: 20px 0 !important;
+    margin: 0 20px !important;
+}
+
+.s1 #alxposts-5 ul.alx-posts li:nth-child(even) {
+    background-color: #6cb0d5;
+    color: #fff !important;
+}
+
 
 
 /* ------------------------------------------------------------------------- *
