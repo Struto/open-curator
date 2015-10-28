@@ -91,7 +91,8 @@ a:hover {
 }
 
 .home .page-title {
-    padding: 15px 0 0 10px !important;
+    display: none !important;
+    /* padding: 15px 0 0 10px !important; */
 }
 
 .page-title {
