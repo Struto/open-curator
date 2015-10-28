@@ -1,6 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('group'); ?>>	
 	<div class="post-inner post-hover">
-		
+
+        <!-- DISABLED ***
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
@@ -17,9 +18,10 @@
 				<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
 			<?php endif; ?>
 		</div><!--/.post-thumbnail-->
-		
+
+        <!-- DISABLED ***
 		<div class="post-meta group">
-			<p class="post-category"><?php the_category(' / '); ?></p>
+            <p class="post-category"><?php the_category(' / '); ?></p>
 
 			<?php $ybi_no_display_date = false;
             $ybi_no_display_author = false;
@@ -34,10 +36,26 @@
 		<h2 class="post-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2><!--/.post-title-->
+
+        <!-- Temp Setup -->
+        <div class="post-meta group">
+            <p class="post-category"><?php the_category(' / '); ?></p>
+
+            <?php $ybi_no_display_date = false;
+            $ybi_no_display_author = false;
+            if(function_exists('ybiproducts_customize_register'))
+            {
+                $ybi_no_display_date = (bool) get_theme_mod('ybi_no_display_date', false);
+                $ybi_no_display_author = (bool) get_theme_mod('ybi_no_display_author', false);
+            } ?>
+            <?php if(!$ybi_no_display_date) :  ?><p class="post-date"><?php the_time('j M, Y'); ?></p><?php endif; ?>
+        </div>
+
 		
 		<?php if (ot_get_option('excerpt-length') != '0'): ?>
 		<div class="entry excerpt">				
-			<?php the_excerpt(); ?>
+			<?php //the_excerpt(); ?>
+            <?php the_content(); ?>
             <a href="<?php the_permalink();?>" class="read-more">Read More</a>
 		</div><!--/.entry-->
 		<?php endif; ?>
