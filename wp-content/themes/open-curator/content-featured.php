@@ -56,7 +56,9 @@
 		<div class="entry excerpt">				
 			<?php //the_excerpt(); ?>
             <?php the_content(); ?>
+            <!--
             <a href="<?php the_permalink();?>" class="read-more">Read More</a>
+            -->
 		</div><!--/.entry-->
 		<?php endif; ?>
 		
