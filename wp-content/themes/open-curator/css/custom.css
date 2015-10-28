@@ -240,11 +240,21 @@ article.format-video .entry-inner img {
 
 .s1 #alxposts-5 {
     padding: 20px 0 !important;
-    margin: 0 20px !important;
+}
+
+.s1 #alxposts-5 h3 {
+    padding-left: 20px;
+}
+
+.s1 #alxposts-5 ul.alx-posts li {
+    padding: 20px;
 }
 
 .s1 #alxposts-5 ul.alx-posts li:nth-child(even) {
     background-color: #6cb0d5;
+}
+
+.s1 #alxposts-5 ul.alx-posts li:nth-child(even) * {
     color: #fff !important;
 }
 
