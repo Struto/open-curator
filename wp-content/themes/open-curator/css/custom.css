@@ -85,6 +85,10 @@ a:hover {
     background: #f7f7f7 !important;
 }
 
+#nav-header .nav-toggle {
+    color: #000;
+}
+
 #header .pad {
     padding-bottom: 20px;
     padding-top: 30px;
@@ -139,6 +143,10 @@ a:hover {
 .entry p,
 .entry dd {
     clear: both;
+}
+
+.entry img {
+    margin-top: 5px !important;
 }
 
 .post-title a {
