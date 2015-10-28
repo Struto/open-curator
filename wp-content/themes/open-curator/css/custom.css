@@ -169,6 +169,11 @@ article.format-video .entry-inner img {
     background-size: cover;
 }
 
+/* Hack Introduction Post Image */
+.postid-324 img.wp-post-image {
+    display: none;
+}
+
 
 
 
