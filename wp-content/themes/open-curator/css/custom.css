@@ -44,7 +44,7 @@
 /* ------------------------------------------------------------------------- */
 
 body {
-    font-family: "ralewaylight";
+    font-family: "ralewayregular";
 }
 
 h1,
@@ -242,7 +242,7 @@ article.format-video .entry-inner img {
     border-radius: 4px;
     color: #fff;
     display: block;
-    font-family: "ralewaylight";
+    font-family: "ralewayregular";
     font-size: 16px;
     margin-top: 10px;
     padding: 5px ;
@@ -335,7 +335,7 @@ article.format-video .entry-inner img {
 /* ------------------------------------------------------------------------- */
 
 .hs-form.stacked label {
-    font-family: "ralewaylight" !important;
+    font-family: "ralewayregular" !important;
     color: #222 !important;
     float: left !important;
     font-weight: 600 !important;
