@@ -145,6 +145,13 @@ a:hover {
     clear: both;
 }
 
+.entry,
+.entry.share {
+    color: #666 !important;
+    font-family: inherit;
+    font-size: 17px;
+}
+
 .entry img {
     margin-top: 5px !important;
 }
@@ -293,6 +300,10 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
+.home-bottom .widget_alx_posts {
+    list-style-type: none !important;
+}
+
 .home-bottom #alxposts-2 ul.alx-posts li,
 .home-bottom #alxposts-3 ul.alx-posts li {
     /* border-right: 1px solid red; */
@@ -300,6 +311,7 @@ article.format-video .entry-inner img {
     float: left;
     height: 260px;
     margin: 0 10px;
+    list-style-type: none !important;
     width: calc(33.33% - 20px) !important;
 }
 

@@ -4,8 +4,18 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="SDINMkoc0dKydwO4KGzUWbF9O9xuQ6H2-DqKwp5Hi7I" />
 
-	<title><?php wp_title(''); ?></title>
+    <title>
+        <?php
+            if( is_home() ) {
+                bloginfo('name');
+            } else {
+                wp_title();
+            }
+        ?>
+        <?php //wp_title(); ?>
+    </title>
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	
