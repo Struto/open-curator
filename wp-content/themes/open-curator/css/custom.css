@@ -233,6 +233,19 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
+.box a {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.box a i.fa {
+    font-size: 30px;
+}
+
 .col2 {
     height: 300px;
     width: 50%;
