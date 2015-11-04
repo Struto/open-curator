@@ -14,7 +14,7 @@
             <div class="videos-container">
 
                 <div id="part-one" class="work">
-                    <div id="harrison-ford" class="box col2">
+                    <div id="harrison-ford" class="box">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">

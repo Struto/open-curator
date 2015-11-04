@@ -197,8 +197,8 @@ article.format-video .entry-inner img {
 }
 
 .videos-container {
-    display: block;
-    height: 800px;
+    display: inline;
+    height: auto;
     position: relative;
     width: 100%;
 }
@@ -237,6 +237,8 @@ article.format-video .entry-inner img {
 
 #harrison-ford {
     background-image: url("../img/videos-bg/ocean_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #kevin-spacey {
@@ -253,8 +255,17 @@ article.format-video .entry-inner img {
 
 #julia-roberts {
     background-image: url("../img/videos-bg/flower_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+#robert-redford {
+    background-image: url("../img/videos-bg/redwood_mosaic_large.jpg");
+}
+
+#penelope-cruz {
+    background-image: url("../img/videos-bg/water_mosaic_large.jpg");
+}
 
 
 
