@@ -45,7 +45,11 @@
 
                         if ( is_category('25') ) {
                             echo "we are there";
+                        } else {
+                            echo "this shit is not working";
                         }
+
+
 
 
 
