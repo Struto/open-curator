@@ -38,7 +38,7 @@ function myMasonryLib() {
     var container = document.querySelector('#masonry');
     var msnry = new Masonry( container, {
         columnWidth: 50,
-        itemSelector: '.item'
+        itemSelector: '.grid-item'
     });
 
 }

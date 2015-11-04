@@ -17,17 +17,31 @@
                         <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
                     </a>
                 </li>
-                <li>
+                <li class="grid-item">
                     <a href="http://drbl.in/fWPV">
                         <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
                     </a>
                 </li>
-                <li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
-                <li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
-                <li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
-                <li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
-                <li><a href="http://drbl.in/gXMn"><img src="images/9.jpg"></a></li>
-                <li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+                <li class="grid-item">
+                    <a href="http://drbl.in/fWMM">
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
+                    </a>
+                </li>
+                <li class="grid-item">
+                    <a href="http://drbl.in/fWPV">
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
+                    </a>
+                </li>
+                <li class="grid-item">
+                    <a href="http://drbl.in/fWMM">
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
+                    </a>
+                </li>
+                <li class="grid-item">
+                    <a href="http://drbl.in/fWPV">
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
+                    </a>
+                </li>
             </ul>
 
         </div>
