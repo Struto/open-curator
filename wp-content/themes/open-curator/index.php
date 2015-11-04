@@ -38,6 +38,13 @@
                             <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
                     </div><!--/.post-list-->
 
+
+
+                     <h1>Test Area</h1>
+
+
+
+
                     <!-- Custom Homepage Bottom Widget Area-->
                     <div class="home-bottom">
                     <?php
@@ -48,23 +55,6 @@
                     </div>
                     <!-- Homepage end of additional widgets -->
                 <?php //endif; ?>
-
-
-                
-
-
-
-                <!-- Videos Exception -->
-                <?php
-                ?>
-                <?php //if( is_category('25') ) { ?>
-
-                <?php //} ?>
-
-
-
-
-
 
 
                 <?php else :  // show something else if not home page ?>
