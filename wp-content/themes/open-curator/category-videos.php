@@ -14,15 +14,69 @@
             <div class="videos-container">
 
                 <div id="part-one" class="work">
-                    <div class="box col2">one</div>
-                    <div class="box col2">two</div>
-                    <div class="box col2">three</div>
-                    <div class="box col2">four</div>
-                    <div class="box col4"><b>ODD FIVE</b></div>
-                    <div class="box col2">six</div>
-                    <div class="box col2">seven</div>
-                    <div class="box col2">eight</div>
-                    <div class="box col2">nine</div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col4">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div class="box col2">
+                        <h2>Harrison Ford is</h2>
+                        <h1>The Ocean</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
                 </div>
 
             </div>
