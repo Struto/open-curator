@@ -42,6 +42,13 @@
                     <div class="home-bottom">
                     <?php
                         dynamic_sidebar( 'homebotttomarea' );
+                    }
+
+                    //all extra loop for the videos template
+                    if ( is_category( 'videos' ) ) {
+
+                        echo "Videos page test";
+
                     } else {
                         echo " ";
                     } ?>
