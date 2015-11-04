@@ -196,9 +196,9 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
-.videos-container { border: 2px solid orange;
+.videos-container {
     display: block;
-    height: 680px;
+    height: 800px;
     position: relative;
     width: 100%;
 }
@@ -212,10 +212,9 @@ article.format-video .entry-inner img {
 
 .box {
 
+    cursor:pointer;
     /* height:167px;  */
     float: left;
-    cursor:pointer;
-    border:1px solid #ff0000;
 }
 
 
@@ -229,7 +228,7 @@ article.format-video .entry-inner img {
 }
 
 
-.col4{  border: 1px solid blue;
+.col4{
     height: 400px;
 
     width: 50%;
