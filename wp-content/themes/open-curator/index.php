@@ -51,16 +51,34 @@
 
 
 
+
                 <!-- Videos Exception -->
                 <?php
                 ?>
-    <?php if( is_category('25') ) { ?>
-        <h1>Worked</h1>
-    <?php } ?>
+                <?php //if( is_category('25') ) { ?>
+
+                <?php //} ?>
+
+
 
 
                 <?php else :  // show something else if not home page ?>
                 <div class="post-list group">
+
+                    <!-- testing some shit -->
+                    <?php if (is_category() ) : ?>
+                    <?php
+
+
+                        echo '<h1>' . "Hello" . '</h1>';
+
+                    ?>
+
+
+                    <?php else:  // carry on as usual ?>
+
+
+
 
                     <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
                         <?php get_template_part('content'); ?>
