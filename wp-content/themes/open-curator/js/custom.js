@@ -6,7 +6,7 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
-    $('.grid').masonry({
+    $('#masonry').masonry({
         itemSelector: '.grid-item',
         columnWidth: 1000
     });
@@ -30,20 +30,10 @@ jQuery( document ).ready(function($) {
     },  3000);
     */
 
-    myMasonryLib();
 
 });
 
 
-function myMasonryLib() {
-
-    var container = document.querySelector('#masonry');
-    var msnry = new Masonry( container, {
-        columnWidth: 50,
-        itemSelector: '.grid-item'
-    });
-
-}
 
 
 
