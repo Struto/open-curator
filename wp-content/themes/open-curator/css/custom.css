@@ -196,32 +196,31 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
-ul.grid {
-
+.box {
+    width:200px;
+    height:167px;
+    float: left;
+    cursor:pointer;
+    border:1px solid #ff0000;
 }
 
-ul.grid li {
-
+.work {
+    top:0;
+    max-width:1600px;
+    position:absolute;
+    border:1px solid blue;
 }
 
-ul.grid li a img {
-
-
-    /* width: 250px; */
-    width: 100%;
+.col2 {
+    width:200px;
+    height:167px;
 }
 
-.grid-item {  bordeR: 1px solid red; display: block; /* height: 100px; */
-
-
-    width: 200px;
+.col2 img {
+    max-width:200px;
 }
 
-.grid-item--width2 { bordeR: 1px solid blue; display: block; /* height: 100px; */
-
-
-    width: 400px;
-}
+.col4{width: 200px; height: 200px; border: 1px solid blue;}
 
 
 

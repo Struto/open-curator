@@ -6,9 +6,9 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
-    var $container = $('#masonry');
+    var $container = $('.work');
     $container.masonry({
-        itemSelector: '.grid-item',
+        itemSelector: '.box',
         isAnimated: true
     });
 
