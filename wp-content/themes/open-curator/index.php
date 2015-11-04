@@ -54,10 +54,10 @@
                 <!-- Videos Exception -->
                 <?php
 
-                    $post_id = "";
-                    $post_id = get_the_ID();
-                    echo $post_id;
-                    echo "Blah";
+                    $the_cat = "";
+                    $the_cat = get_the_category();
+                    echo $the_cat;
+                    echo "The Cat";
 
 
 
