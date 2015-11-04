@@ -196,13 +196,13 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
-.grid-item {  bordeR: 1px solid red; display: block; height: 100px;
+.grid-item {  bordeR: 1px solid red; display: block; /* height: 100px; */
 
 
     width: 200px;
 }
 
-.grid-item--width2 { bordeR: 1px solid blue; display: block; height: 100px;
+.grid-item--width2 { bordeR: 1px solid blue; display: block; /* height: 100px; */
 
 
 
