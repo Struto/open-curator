@@ -54,7 +54,7 @@
                 <!-- Videos Exception -->
                 <?php
                 ?>
-    <?php if( in_category('25') ) { ?>
+    <?php if( is_category('25') ) { ?>
         <h1>Worked</h1>
     <?php } ?>
 
