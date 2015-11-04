@@ -45,7 +45,8 @@
                     }
 
                     //all extra loop for the videos template
-                    if ( is_category( 'category-videos' ) ) {
+                    //if ( is_category( 'category-videos' ) ) {
+                    if ( in_category( 'videos' )) {
 
                         echo "Videos page test";
 
