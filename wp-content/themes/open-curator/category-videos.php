@@ -7,7 +7,7 @@
 
 
         <!-- Featured external YouTube videos -->
-        <div class="feat-vids">
+        <div class="feat-vids pad">
             <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
 
 
@@ -31,7 +31,6 @@
                 <div class="post-list group">
                     <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
                         <?php get_template_part('content'); ?>
-                        <h1>Oh hell no</h1>
                         <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
                 </div><!--/.post-list-->
 
