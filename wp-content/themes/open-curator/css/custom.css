@@ -122,8 +122,6 @@ a:hover {
 
 
 
-
-
 /* ------------------------------------------------------------------------- *
  *  Navigation Custom Styles
 /* ------------------------------------------------------------------------- */
@@ -188,8 +186,28 @@ article.format-video .entry-inner img {
  *  Custom Videos - Masonry Layout
 /* ------------------------------------------------------------------------- */
 
-.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }
+.video-widgettitle {
+    display: block;
+    font-family: "ralewayregular";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.grid-item {  bordeR: 1px solid red; display: block; height: 100px;
+
+
+    width: 200px;
+}
+
+.grid-item--width2 { bordeR: 1px solid blue; display: block; height: 100px;
+
+
+
+    width: 400px;
+}
 
 
 
@@ -435,6 +453,7 @@ textarea.hs-input.error {
 footer ul.social-links li a { }
 
 footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
+
 
 
 

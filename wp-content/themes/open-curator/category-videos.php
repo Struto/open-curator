@@ -9,7 +9,7 @@
         <!-- Featured external YouTube videos -->
         <div class="feat-vids pad">
 
-            <h2 class="widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
+            <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
             <div class="grid">
                 <div class="grid-item">
