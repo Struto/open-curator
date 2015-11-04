@@ -12,18 +12,17 @@
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
             <div class="videos-container">
-
-            </div>
-            <div id="part-one" class="work">
-                <div class="box col2">one</div>
-                <div class="box col2">two</div>
-                <div class="box col2">three</div>
-                <div class="box col2">four</div>
-                <div class="box col4"><b>ODD FIVE</b></div>
-                <div class="box col2">six</div>
-                <div class="box col2">seven</div>
-                <div class="box col2">eight</div>
-                <div class="box col2">nine</div>
+                <div id="part-one" class="work">
+                    <div class="box col2">one</div>
+                    <div class="box col2">two</div>
+                    <div class="box col2">three</div>
+                    <div class="box col2">four</div>
+                    <div class="box col4"><b>ODD FIVE</b></div>
+                    <div class="box col2">six</div>
+                    <div class="box col2">seven</div>
+                    <div class="box col2">eight</div>
+                    <div class="box col2">nine</div>
+                </div>
             </div>
 
 
