@@ -43,11 +43,17 @@
                      <h1>Test Area</h1>
                      <?php
 
-                        if ( is_category('25') ) {
-                            echo "we are there";
-                        } else {
-                            echo "this shit is not working";
+                        if(in_category('videos')){
+
+                            if ( is_category('25') ) {
+                                echo "we are there";
+                            } else {
+                                echo "this shit is not working";
+                            }
+
                         }
+
+
 
 
 
