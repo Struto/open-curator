@@ -212,7 +212,7 @@ article.format-video .entry-inner img {
 
 .box {
 
-    height:167px;
+    /* height:167px;  */
     float: left;
     cursor:pointer;
     border:1px solid #ff0000;
@@ -220,7 +220,7 @@ article.format-video .entry-inner img {
 
 
 .col2 {
-
+    height: 300px;
     width: 25%;
 }
 
@@ -230,7 +230,7 @@ article.format-video .entry-inner img {
 
 
 .col4{  border: 1px solid blue;
-    height: 200px;
+    height: 400px;
 
     width: 50%;
 }
