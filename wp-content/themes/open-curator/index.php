@@ -54,6 +54,14 @@
                 <!-- Videos Exception -->
                 <?php
 
+                    $post_id = "";
+                    $post_id = get_the_ID();
+                    echo $post_id;
+                    echo "Blah";
+
+
+
+                    /*
                     if( is_category() ) {
                         $catName = single_cat_title("",false);
                         $catID = get_cat_ID($catName);
@@ -61,6 +69,7 @@
                         echo "Testing";
                         echo '<a href="'. get_category_link($catID) .'">'. $catName .' </a>';
                     }
+                    */
 
                     /*
                     //all extra loop for the videos template

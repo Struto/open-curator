@@ -17,7 +17,10 @@
 			<?php if ( !ot_get_option( 'comment-count' ) ): ?>
 				<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
 			<?php endif; ?>
-		</div><!--/.post-thumbnail-->
+		</div>
+	    -->
+		<!--/.post-thumbnail-->
+
 
         <!-- DISABLED ***
 		<div class="post-meta group">
@@ -31,8 +34,11 @@
                 $ybi_no_display_author = (bool) get_theme_mod('ybi_no_display_author', false); 
             } ?>
 			<?php if(!$ybi_no_display_date) :  ?><p class="post-date"><?php the_time('j M, Y'); ?></p><?php endif; ?>
-		</div><!--/.post-meta-->
-		
+		</div>
+		-->
+		<!--/.post-meta-->
+
+
 		<h2 class="post-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2><!--/.post-title-->
