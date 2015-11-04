@@ -10,13 +10,7 @@ jQuery( document ).ready(function($) {
         itemSelector: '.grid-item',
         columnWidth: 1000
     });
-    /*
-    $('.grid').masonry({
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 200
-    });
-    */
+
 
     // Other JS here
 
@@ -35,4 +29,19 @@ jQuery( document ).ready(function($) {
             .appendTo('.slides');
     },  3000);
     */
+
 });
+
+
+function myMasonryLib() {
+
+    var container = document.querySelector('#masonry');
+    var msnry = new Masonry( container, {
+        columnWidth: 50,
+        itemSelector: '.item'
+    });
+
+}
+
+
+
