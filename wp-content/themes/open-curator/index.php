@@ -42,7 +42,17 @@
                     <div class="home-bottom">
                     <?php
                         dynamic_sidebar( 'homebotttomarea' );
-                    }
+                    } else {
+                        echo " ";
+                    } ?>
+                    </div>
+                    <!-- Homepage end of additional widgets -->
+                <?php //endif; ?>
+
+
+
+                <!-- Videos Exception -->
+                <?php
 
                     //all extra loop for the videos template
                     //if ( is_category( 'category-videos' ) ) {
@@ -50,12 +60,10 @@
 
                         echo "Videos page test";
 
-                    } else {
-                        echo " ";
-                    } ?>
-                    </div>
-                    <!-- Homepage end of additional widgets -->
-                <?php //endif; ?>
+                    }
+
+
+                ?>
 
 
                 <?php else :  // show something else if not home page ?>
