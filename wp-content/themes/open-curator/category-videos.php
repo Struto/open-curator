@@ -11,7 +11,9 @@
 
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
+            <div class="videos-container">
 
+            </div>
             <div id="part-one" class="work">
                 <div class="box col2">one</div>
                 <div class="box col2">two</div>

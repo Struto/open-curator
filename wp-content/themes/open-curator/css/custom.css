@@ -196,6 +196,11 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
+.videos-container { border: 2px solid orange;
+    display: inline-block;
+    position: relative;
+}
+
 .box {
     width:200px;
     height:167px;
@@ -206,7 +211,7 @@ article.format-video .entry-inner img {
 
 .work {
     top:0;
-    max-width:1600px;
+    max-width: 100%;
     position:absolute;
     border:1px solid blue;
 }
