@@ -203,19 +203,19 @@ article.format-video .entry-inner img {
     width: 100%;
 }
 
+.work {
+    top:0;
+    max-width: 100%;
+    position:absolute;
+    border:1px solid blue;
+}
+
 .box {
 
     height:167px;
     float: left;
     cursor:pointer;
     border:1px solid #ff0000;
-}
-
-.work {
-    top:0;
-    max-width: 100%;
-    position:absolute;
-    border:1px solid blue;
 }
 
 
@@ -233,6 +233,10 @@ article.format-video .entry-inner img {
     height: 200px;
 
     width: 50%;
+}
+
+#harrison-ford {
+    background-image: url("../img/videos-bg/ocean_mosaic_large.jpg");
 }
 
 
