@@ -228,7 +228,12 @@ article.format-video .entry-inner img {
 
 }
 
-.col4{width: 50%; height: 200px; border: 1px solid blue;}
+
+.col4{  border: 1px solid blue;
+    height: 200px;
+
+    width: 50%;
+}
 
 
 
