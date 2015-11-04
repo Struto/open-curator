@@ -12,14 +12,14 @@
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
             <ul class="grid effect-5" id="grid">
-                <li>
+                <li class="grid-item">
                     <a href="http://drbl.in/fWMM">
-                        <img class="grid-item" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
                     </a>
                 </li>
                 <li>
                     <a href="http://drbl.in/fWPV">
-                        <img class="grid-item" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
+                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
                     </a>
                 </li>
                 <li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
