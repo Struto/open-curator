@@ -62,7 +62,7 @@
 
 
 
-                <?php else :  // show something else if not home page ?>
+                <?php //else :  // show something else if not home page ?>
                 <div class="post-list group">
 
                     <!-- testing some shit -->
@@ -70,7 +70,7 @@
                     <?php
 
 
-                        echo '<h1>' . "Hello" . '</h1>';
+                        echo '<h1>' . "Hello" . '</h1>';2
 
                     ?>
 
