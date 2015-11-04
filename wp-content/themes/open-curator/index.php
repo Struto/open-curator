@@ -43,10 +43,12 @@
                      <h1>Test Area</h1>
                      <?php
 
-                        if(in_category('videos')){
+                        if(is_category('videos')){
 
-                            if ( is_category('25') ) {
-                                echo "we are there";
+                            echo "Is Category";
+
+                            if ( in_category('25') ) {
+                                echo "In Category";
                             } else {
                                 echo "this shit is not working";
                             }
