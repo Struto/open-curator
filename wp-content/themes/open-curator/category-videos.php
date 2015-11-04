@@ -3,6 +3,9 @@
     <section class="content">
 
 
+        <?php get_template_part('inc/page-title'); ?>
+
+
         <!-- Featured external YouTube videos -->
         <div class="feat-vids">
             <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
@@ -14,9 +17,7 @@
         </div>
 
 
-
-        <?php get_template_part('inc/page-title'); ?>
-
+        <!-- Rest of the videos or default categories -->
         <div class="pad group">
 
             <?php if ((category_description() != '') && !is_paged()) : ?>
