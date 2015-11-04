@@ -54,6 +54,13 @@
                 <!-- Videos Exception -->
                 <?php
 
+                    if( is_category() ) {
+                        $catName = single_cat_title("",false);
+                        $catID = get_cat_ID($catName);
+                        echo '<a href="'. get_category_link($catID) .'">'. $catName .' </a>';
+                    }
+
+                    /*
                     //all extra loop for the videos template
                     //if ( is_category( 'category-videos' ) || is_category( 'videos' ) ) {
                     if ( in_category( 'category-videos' ) || is_category( 'videos' ) ) {
@@ -61,13 +68,14 @@
                         echo "Videos page test";
 
                     }
-
+                    */
 
                 ?>
 
 
                 <?php else :  // show something else if not home page ?>
                 <div class="post-list group">
+
                     <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
                         <?php get_template_part('content'); ?>
                         <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
