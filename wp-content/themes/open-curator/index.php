@@ -6,21 +6,6 @@
 
         <div class="pad group">
 
-            <!-- Custom Video page loop -->
-            <?php
-                if ( is_archive( ) ||  is_category( ) ) {
-
-
-                    echo "Hi there";
-                }
-
-
-
-            ?>
-
-
-
-
             <!-- On the homepage where there is a featured piece -->
             <?php get_template_part('inc/featured'); ?>
 

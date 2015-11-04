@@ -6,6 +6,18 @@
 
         <div class="pad group">
 
+            <!-- Featured external YouTube videos -->
+            <div class="feat-vids">
+                <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
+
+
+
+
+
+            </div>
+
+
+
             <?php if ((category_description() != '') && !is_paged()) : ?>
                 <div class="notebox">
                     <?php echo category_description(); ?>
@@ -16,7 +28,7 @@
 
                 <div class="post-list group">
                     <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
-                        <?php //get_template_part('content'); ?>
+                        <?php get_template_part('content'); ?>
                         <h1>Oh hell no</h1>
                         <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
                 </div><!--/.post-list-->
