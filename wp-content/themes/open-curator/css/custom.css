@@ -221,7 +221,7 @@ article.format-video .entry-inner img {
 
 .col2 {
 
-    width: 25%;
+    width: 50%;
 }
 
 .col2 img {
@@ -232,7 +232,7 @@ article.format-video .entry-inner img {
 .col4{  border: 1px solid blue;
     height: 200px;
 
-    width: 50%;
+    width: 100%;
 }
 
 #harrison-ford {
