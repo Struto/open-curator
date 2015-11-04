@@ -81,46 +81,13 @@
 
             </div>
 
-
-            <!--
-            <ul id="masonry" class="grid effect-5" id="grid">
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWMM">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
-                    </a>
-                </li>
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWPV">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
-                    </a>
-                </li>
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWMM">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
-                    </a>
-                </li>
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWPV">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
-                    </a>
-                </li>
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWMM">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
-                    </a>
-                </li>
-                <li class="grid-item">
-                    <a href="http://drbl.in/fWPV">
-                        <img class="" src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
-                    </a>
-                </li>
-            </ul>
-            -->
         </div>
 
 
         <!-- Rest of the videos or default categories -->
         <div class="pad group">
+
+            <h2 class="video-widgettitle"><?php printf( __( 'General Videos', 'curation-hue' ) ); ?></h2>
 
             <?php if ((category_description() != '') && !is_paged()) : ?>
                 <div class="notebox">
