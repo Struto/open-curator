@@ -21,28 +21,28 @@
                             play
                         </a>
                     </div>
-                    <div class="box col2">
+                    <div id="kevin-spacey" class="box col2">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
-                    <div class="box col2">
+                    <div id="ian-somerhalder" class="box col2">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
-                    <div class="box col2">
+                    <div id="lupita-nyongo" class="box col2">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
-                    <div class="box col4">
+                    <div id="julia-roberts" class="box col4">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">

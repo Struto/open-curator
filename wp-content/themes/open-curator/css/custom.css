@@ -234,9 +234,27 @@ article.format-video .entry-inner img {
     width: 100%;
 }
 
+
 #harrison-ford {
     background-image: url("../img/videos-bg/ocean_mosaic_large.jpg");
 }
+
+#kevin-spacey {
+    background-image: url("../img/videos-bg/rainforest_mosaic_large.jpg");
+}
+
+#ian-somerhalder {
+    background-image: url("../img/videos-bg/coral_mosaic_large.jpg");
+}
+
+#lupita-nyongo {
+    background-image: url("../img/videos-bg/flower_mosaic_large.jpg");
+}
+
+#julia-roberts {
+    background-image: url("../img/videos-bg/flower_mosaic_large.jpg");
+}
+
 
 
 
