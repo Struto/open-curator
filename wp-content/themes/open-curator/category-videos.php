@@ -50,33 +50,35 @@
                         </a>
                     </div>
                     <div id="julia-roberts" class="box col4">
-                        <h2>Julia Robberts is</h2>
+                        <h2>Julia Roberts is</h2>
                         <h1>Mother Nature</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
-                    <div class="box col2">
+                    <div id="edward-norton" class="box col2">
+                        <h2>Edward Norton is</h2>
+                        <h1>Soil</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div id="penelope-cruz" class="box col2">
+                        <h2>Penelope Cruz is</h2>
+                        <h1>Water</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <!--
+                    <div id class="box col2">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
-                    <div class="box col2">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
-                        <a href="#">
-                            play
-                        </a>
-                    </div>
-                    <div class="box col2">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
-                        <a href="#">
-                            play
-                        </a>
-                    </div>
+                    -->
                 </div>
 
             </div>

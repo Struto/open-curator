@@ -21,7 +21,7 @@ function theme_enqueue_styles() {
 
     // load masonry js on videos catefory only
     if ( is_category('videos') ) {
-        wp_enqueue_script('masonry-js', get_stylesheet_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ) );
+        //wp_enqueue_script('masonry-js', get_stylesheet_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ) );
         wp_enqueue_script('packery-js', get_stylesheet_directory_uri() . '/js/packery.pkgd.min.js', array( 'jquery' ) );
     }
 
