@@ -54,30 +54,11 @@
                 <!-- Videos Exception -->
                 <?php
                 ?>
-                <?php $catname = wp_title('', false); ?>
-                <?php query_posts("category_name=$catname&showposts=10"); ?>
-                <?php $posts = get_posts("category_name=$catname&numberposts=3&offset=0");
-                foreach ($posts as $post) : start_wp(); ?>
-                    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-                    <div class="dateleft">
-                        <p><span class="time"><?php the_time('F j, Y'); ?></span> <?php _e("by", 'studiopress'); ?> <?php the_author_posts_link(); ?> &nbsp;<?php edit_post_link(__('(Edit)', 'studiopress'), '', ''); ?> <br /> <?php _e("Filed under", 'studiopress'); ?> <?php the_category(', ') ?></p>
-                    </div>
-
-                    <div class="dateright">
-                        <p><span class="icomment"><a rel="nofollow" href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment', 'studiopress'), __('1 Comment', 'studiopress'), __('% Comments', 'studiopress')); ?></a></span></p>
-                    </div>
-
-                    <div class="clear"></div>
-                    <?php the_excerpt(__('Read more', 'studiopress'));?>
-                    <div class="clear"></div>
-
-                    <div class="postmeta2">
-                        <p><span class="tags">Tags: <?php the_tags('') ?></span></p>
-                    </div>
-                <?php endforeach; ?>
-                
-
+                <?php query_posts('cat=5'); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php the_content(); ?>
+                <?php endwhile; endif; ?>
+                <?php wp_reset_query(); ?>
 
 
 
