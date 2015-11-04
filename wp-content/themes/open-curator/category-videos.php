@@ -2,21 +2,22 @@
 
     <section class="content">
 
+
+        <!-- Featured external YouTube videos -->
+        <div class="feat-vids">
+            <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
+
+
+
+
+
+        </div>
+
+
+
         <?php get_template_part('inc/page-title'); ?>
 
         <div class="pad group">
-
-            <!-- Featured external YouTube videos -->
-            <div class="feat-vids">
-                <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
-
-
-
-
-
-            </div>
-
-
 
             <?php if ((category_description() != '') && !is_paged()) : ?>
                 <div class="notebox">
