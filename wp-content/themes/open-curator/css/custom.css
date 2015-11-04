@@ -211,26 +211,33 @@ article.format-video .entry-inner img {
 }
 
 .box {
-
     cursor:pointer;
     /* height:167px;  */
     float: left;
 }
 
+.box h2 {
+    color: #fff;
+    display: block;
+    font-size: 12px;
+}
+
+.box h1 {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+}
 
 .col2 {
     height: 300px;
     width: 50%;
 }
 
-.col2 img {
-
-}
-
-
 .col4{
     height: 400px;
-
     width: 100%;
 }
 
