@@ -8,11 +8,23 @@
 
         <!-- Featured external YouTube videos -->
         <div class="feat-vids pad">
-            <h1><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h1>
+
+            <h2 class="widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
+
+            <div class="grid">
+                <div class="grid-item">
+
+                </div>
+                <div class="grid-item grid-item--width2">
+
+                </div>
+                <div class="grid-item">
+
+                </div>
 
 
 
-
+            </div>
 
         </div>
 
