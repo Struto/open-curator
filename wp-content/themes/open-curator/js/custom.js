@@ -5,8 +5,16 @@
 jQuery( document ).ready(function($) {
 
 
-    // Custom JS here
+    // Video Masonry
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+    });
 
+
+    // Other JS here
+    
 
 
     // Rotate Featured Home Page Posts
