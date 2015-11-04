@@ -14,7 +14,7 @@
             <div class="videos-container">
 
                 <div id="part-one" class="work">
-                    <div id="harrison-ford" class="box">
+                    <div id="harrison-ford" class="box col4">
                         <h2>Harrison Ford is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
@@ -22,36 +22,36 @@
                         </a>
                     </div>
                     <div id="kevin-spacey" class="box col2">
-                        <h2>Harrison Ford is</h2>
+                        <h2>Kevin Spacey is</h2>
                         <h1>The Ocean</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
                     <div id="ian-somerhalder" class="box col2">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
+                        <h2>Ian Somerhalder is</h2>
+                        <h1>Coral Reef</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
                     <div id="lupita-nyongo" class="box col2">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
+                        <h2>Lupita Nyong'o is</h2>
+                        <h1>Flower</h1>
+                        <a href="#">
+                            play
+                        </a>
+                    </div>
+                    <div id="edward-norton" class="box col2">
+                        <h2>Edward Norton is</h2>
+                        <h1>Soil</h1>
                         <a href="#">
                             play
                         </a>
                     </div>
                     <div id="julia-roberts" class="box col4">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
-                        <a href="#">
-                            play
-                        </a>
-                    </div>
-                    <div class="box col2">
-                        <h2>Harrison Ford is</h2>
-                        <h1>The Ocean</h1>
+                        <h2>Julia Robberts is</h2>
+                        <h1>Mother Nature</h1>
                         <a href="#">
                             play
                         </a>
