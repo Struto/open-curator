@@ -53,35 +53,33 @@
 
                 <!-- Videos Exception -->
                 <?php
-
-                    $the_cat = "";
-                    $the_cat = get_the_category();
-                    echo $the_cat;
-                    echo "The Cat";
-
-
-
-                    /*
-                    if( is_category() ) {
-                        $catName = single_cat_title("",false);
-                        $catID = get_cat_ID($catName);
-
-                        echo "Testing";
-                        echo '<a href="'. get_category_link($catID) .'">'. $catName .' </a>';
-                    }
-                    */
-
-                    /*
-                    //all extra loop for the videos template
-                    //if ( is_category( 'category-videos' ) || is_category( 'videos' ) ) {
-                    if ( in_category( 'category-videos' ) || is_category( 'videos' ) ) {
-
-                        echo "Videos page test";
-
-                    }
-                    */
-
                 ?>
+                <?php $catname = wp_title('', false); ?>
+                <?php query_posts("category_name=$catname&showposts=10"); ?>
+                <?php $posts = get_posts("category_name=$catname&numberposts=3&offset=0");
+                foreach ($posts as $post) : start_wp(); ?>
+                    <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+
+                    <div class="dateleft">
+                        <p><span class="time"><?php the_time('F j, Y'); ?></span> <?php _e("by", 'studiopress'); ?> <?php the_author_posts_link(); ?> &nbsp;<?php edit_post_link(__('(Edit)', 'studiopress'), '', ''); ?> <br /> <?php _e("Filed under", 'studiopress'); ?> <?php the_category(', ') ?></p>
+                    </div>
+
+                    <div class="dateright">
+                        <p><span class="icomment"><a rel="nofollow" href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment', 'studiopress'), __('1 Comment', 'studiopress'), __('% Comments', 'studiopress')); ?></a></span></p>
+                    </div>
+
+                    <div class="clear"></div>
+                    <?php the_excerpt(__('Read more', 'studiopress'));?>
+                    <div class="clear"></div>
+
+                    <div class="postmeta2">
+                        <p><span class="tags">Tags: <?php the_tags('') ?></span></p>
+                    </div>
+                <?php endforeach; ?>
+                
+
+
+
 
 
                 <?php else :  // show something else if not home page ?>
