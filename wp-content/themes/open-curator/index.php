@@ -43,6 +43,9 @@
                      <h1>Test Area</h1>
                      <?php
 
+
+
+                        /*
                         if(is_category('videos')){
 
                             echo "Is Category";
@@ -54,13 +57,7 @@
                             }
 
                         }
-
-
-
-
-
-
-
+                        */
                      ?>
 
 

@@ -9,6 +9,9 @@
 		<?php if ((category_description() != '') && !is_paged()) : ?>
 			<div class="notebox">
 				<?php echo category_description(); ?>
+
+                <h2>Testing</h2>
+
 			</div>
 		<?php endif; ?>
 		
