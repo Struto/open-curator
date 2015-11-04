@@ -12,7 +12,7 @@
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
             <ul class="grid effect-5" id="grid">
-                <li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+                <li><a href="http://drbl.in/fWMM"><img src="http://drbl.in/fWMM"></a></li>
                 <li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
                 <li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
                 <li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
