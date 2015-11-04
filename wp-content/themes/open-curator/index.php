@@ -54,9 +54,9 @@
                 <!-- Videos Exception -->
                 <?php
                 ?>
-  
-
-
+    <?php if( in_category('25') ) { ?>
+        <h1>Worked</h1>
+    <?php } ?>
 
 
                 <?php else :  // show something else if not home page ?>
