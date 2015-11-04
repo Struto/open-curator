@@ -6,6 +6,22 @@
 
         <div class="pad group">
 
+            <!-- Custom Video page loop -->
+            <?php
+                if ( is_archive( ) ||  is_category( ) ) {
+
+
+                    echo "Hi there";
+                }
+
+
+
+            ?>
+
+
+
+
+            <!-- On the homepage where there is a featured piece -->
             <?php get_template_part('inc/featured'); ?>
 
             <?php if ( have_posts() ) : ?>
@@ -37,30 +53,6 @@
                             <?php get_template_part('content'); ?>
                             <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
                     </div><!--/.post-list-->
-
-
-
-                     <h1>Test Area</h1>
-                     <?php
-
-
-
-                        /*
-                        if(is_category('videos')){
-
-                            echo "Is Category";
-
-                            if ( in_category('25') ) {
-                                echo "In Category";
-                            } else {
-                                echo "this shit is not working";
-                            }
-
-                        }
-                        */
-                     ?>
-
-
 
 
                     <!-- Custom Homepage Bottom Widget Area-->
