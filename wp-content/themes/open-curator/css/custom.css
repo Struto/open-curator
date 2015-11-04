@@ -197,7 +197,8 @@ article.format-video .entry-inner img {
 }
 
 .videos-container { border: 2px solid orange;
-    display: inline-block;
+    display: block;
+    height: 680px;
     position: relative;
 }
 
