@@ -6,6 +6,13 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
+    var $container = $('#masonry');
+    $container.masonry({
+        itemSelector: '.grid-item',
+        isAnimated: true
+    });
+
+
     /*
     $('#masonry').masonry({
         itemSelector: '.grid-item',
@@ -33,19 +40,3 @@ jQuery( document ).ready(function($) {
 
 
 });
-
-
-
-$(function(){
-    var $container = $('#masonry');
-    //$container.imagesLoaded(function(){
-    $container.masonry({
-        itemSelector: '.grid-item',
-        isAnimated: true,
-    });
-    //});
-});
-
-
-
-
