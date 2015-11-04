@@ -6,12 +6,14 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
+    $('.grid').masonry();
+    /*
     $('.grid').masonry({
         // options
-        itemSelector: '.grid-item'
-        /* columnWidth: 200 */
+        itemSelector: '.grid-item',
+        columnWidth: 200
     });
-
+    */
 
     // Other JS here
 

@@ -11,20 +11,16 @@
 
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
-            <div class="grid">
-                <div class="grid-item">
-
-                </div>
-                <div class="grid-item grid-item--width2">
-
-                </div>
-                <div class="grid-item">
-
-                </div>
-
-
-
-            </div>
+            <ul class="grid effect-5" id="grid">
+                <li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+                <li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+                <li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+                <li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+                <li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+                <li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+                <li><a href="http://drbl.in/gXMn"><img src="images/9.jpg"></a></li>
+                <li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+            </ul>
 
         </div>
 
