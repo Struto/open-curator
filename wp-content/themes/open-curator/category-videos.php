@@ -19,7 +19,7 @@
                 </li>
                 <li>
                     <a href="http://drbl.in/fWPV">
-                        <img src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
+                        <img src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg" >
                     </a>
                 </li>
                 <li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>

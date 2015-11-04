@@ -196,6 +196,10 @@ article.format-video .entry-inner img {
     text-transform: uppercase;
 }
 
+ul.grid li a img {
+    width: 250px;
+}
+
 .grid-item {  bordeR: 1px solid red; display: block; /* height: 100px; */
 
 
@@ -203,7 +207,6 @@ article.format-video .entry-inner img {
 }
 
 .grid-item--width2 { bordeR: 1px solid blue; display: block; /* height: 100px; */
-
 
 
     width: 400px;
