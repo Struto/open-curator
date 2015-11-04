@@ -50,6 +50,8 @@
                 <?php //endif; ?>
 
 
+                
+
 
 
                 <!-- Videos Exception -->
@@ -62,23 +64,11 @@
 
 
 
-                <?php //else :  // show something else if not home page ?>
+
+
+
+                <?php else :  // show something else if not home page ?>
                 <div class="post-list group">
-
-                    <!-- testing some shit -->
-                    <?php if (is_category() ) : ?>
-                    <?php
-
-
-                        echo '<h1>' . "Hello" . '</h1>';2
-
-                    ?>
-
-
-                    <?php else:  // carry on as usual ?>
-
-
-
 
                     <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
                         <?php get_template_part('content'); ?>
