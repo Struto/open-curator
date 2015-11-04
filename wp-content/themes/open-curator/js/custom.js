@@ -6,11 +6,12 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
+    /*
     $('#masonry').masonry({
         itemSelector: '.grid-item',
         columnWidth: 1000
     });
-
+    */
 
     // Other JS here
 
@@ -33,6 +34,17 @@ jQuery( document ).ready(function($) {
 
 });
 
+
+
+$(function(){
+    var $container = $('#masonry');
+    //$container.imagesLoaded(function(){
+    $container.masonry({
+        itemSelector: '.grid-item',
+        isAnimated: true,
+    });
+    //});
+});
 
 
 
