@@ -7,7 +7,8 @@ jQuery( document ).ready(function($) {
 
     // Video Masonry
     var $container = $('.work');
-    $container.masonry({
+    //$container.masonry({
+    $container.packery({
         itemSelector: '.box',
         isAnimated: true
     });

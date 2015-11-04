@@ -200,6 +200,7 @@ article.format-video .entry-inner img {
     display: block;
     height: 680px;
     position: relative;
+    width: 100%;
 }
 
 .box {
