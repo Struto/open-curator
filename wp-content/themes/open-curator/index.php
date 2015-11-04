@@ -55,8 +55,8 @@
                 <?php
 
                     //all extra loop for the videos template
-                    if ( is_category( 'category-videos' ) || is_category( 'videos' ) ) {
-                    //if ( in_category( 'videos' )) {
+                    //if ( is_category( 'category-videos' ) || is_category( 'videos' ) ) {
+                    if ( in_category( 'category-videos' ) || is_category( 'videos' ) ) {
 
                         echo "Videos page test";
 
