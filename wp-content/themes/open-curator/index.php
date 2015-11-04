@@ -43,7 +43,7 @@
                      <h1>Test Area</h1>
                      <?php
 
-                        if ( in_category('25') ) {
+                        if ( is_category('25') ) {
                             echo "we are there";
                         }
 
