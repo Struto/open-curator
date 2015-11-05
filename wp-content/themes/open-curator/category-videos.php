@@ -15,14 +15,14 @@
 
                 <div id="part-one" class="work">
                     <div id="harrison-ford" class="box col4">
-                        <a class="various fancybox.iframe" href="class="various fancybox.iframe"">
+                        <a class="various fancybox.iframe" href="">
                             <h2>Harrison Ford is</h2>
                             <h1>The Ocean</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="kevin-spacey" class="box col2">
-                        <a class="various fancybox.iframe" href="class="various fancybox.iframe"">
+                        <a class="various fancybox.iframe" href="">
                             <h2>Kevin Spacey is</h2>
                             <h1>The Rainforest</h1>
                             <i class="fa fa-play"></i>
@@ -57,14 +57,14 @@
                         </a>
                     </div>
                     <div id="edward-norton" class="box col2">
-                        <a class="various fancybox.iframe" href="#">
+                        <a class="various fancybox.iframe" href="">
                             <h2>Edward Norton is</h2>
                             <h1>Soil</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="penelope-cruz" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=fwV9OYeGN88">
+                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=fwV9OYeGN88?autoplay=1">
                             <h2>Penelope Cruz is</h2>
                             <h1>Water</h1>
                             <i class="fa fa-play"></i>
