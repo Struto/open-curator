@@ -70,6 +70,9 @@
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
+                    <div class="box cold2">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1">Youtube (iframe)</a>
+                    </div>
                 </div>
 
             </div>
