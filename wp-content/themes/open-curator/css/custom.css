@@ -279,18 +279,26 @@ article.format-video .entry-inner img {
 
 #kevin-spacey {
     background-image: url("../img/videos-bg/rainforest_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #ian-somerhalder {
     background-image: url("../img/videos-bg/coral_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #lupita-nyongo {
     background-image: url("../img/videos-bg/flower_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #edward-norton {
     background-image: url("../img/videos-bg/soil_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #julia-roberts {
@@ -301,10 +309,14 @@ article.format-video .entry-inner img {
 
 #robert-redford {
     background-image: url("../img/videos-bg/redwood_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #penelope-cruz {
     background-image: url("../img/videos-bg/water_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -624,6 +636,12 @@ footer ul.social-links li a.social-tooltip i.fa.fa-linkedin { }
     #footer-widgets .textwidget p {
         height: auto;
     }
+
+}
+
+
+
+@media (max-width:719px) {
 
     /* Videos */
     .col2 {
