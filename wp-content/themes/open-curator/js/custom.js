@@ -5,9 +5,9 @@
 jQuery( document ).ready(function($) {
 
     // Featured videos fancybox
-    $('.various').click( function() {
+    //$('.various').click( function() {
         //$(".various").fancybox({
-        $(this).fancybox({
+        $(".various").fancybox({
             maxWidth	: 800,
             maxHeight	: 600,
             fitToView	: false,
@@ -18,8 +18,8 @@ jQuery( document ).ready(function($) {
             openEffect	: 'none',
             closeEffect	: 'none'
         });
-        return false;
-    });
+        //return false;
+    //});
 
 
     // Video Masonry
