@@ -9,14 +9,13 @@
         <!-- Featured external YouTube videos -->
         <div class="feat-vids pad">
 
-            <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
+            <h2 class="video-widgettitle"><?php printf( __( "'Nature is Speaking': Will we listen?", 'curation-hue' ) ); ?></h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt tempus mattis.
-                Pellentesque pellentesque nulla magna, vitae maximus lectus consectetur quis. Aliquam erat volutpat.
-                Pellentesque metus augue, sollicitudin luctus nulla ullamcorper, faucibus scelerisque justo.
-                Pellentesque pulvinar libero enim, vitae egestas erat maximus id. Morbi sit amet aliquam massa.
-                Vivamus consequat auctor ex, vitae imperdiet tortor commodo nec. Curabitur quis porttitor dui,
-                id tempus nisi. Maecenas in faucibus nisl, nec suscipit tortor. Aenean eget sagittis augue. </p>
+            <p>In a new video series from Conservation International, A-list actors including Julia Roberts,
+                Harrison Ford and Kevin Spacey personify nature. The aim of the series is to make it clear to
+                everyone that the planet has been evolving for millions of years and will continue to do so,
+                with or without humans. It is our choice to address environmental issues and change our ways
+                to ensure we play a part in its future.</p>
             <br>
             <div class="videos-container">
 
