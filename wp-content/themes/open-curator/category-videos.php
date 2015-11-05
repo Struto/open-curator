@@ -15,64 +15,60 @@
 
                 <div id="part-one" class="work">
                     <div id="harrison-ford" class="box col4">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=rM6txLtoaoc?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/rM6txLtoaoc?autoplay=1">
                             <h2>Harrison Ford is</h2>
                             <h1>The Ocean</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="kevin-spacey" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=jBqMJzv4Cs8?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/jBqMJzv4Cs8?autoplay=1">
                             <h2>Kevin Spacey is</h2>
                             <h1>The Rainforest</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="ian-somerhalder" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=lVMV3StvLCs?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/lVMV3StvLCs?autoplay=1">
                             <h2>Ian Somerhalder is</h2>
                             <h1>Coral Reef</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="lupita-nyongo" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=0_OxI2JZex4?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/0_OxI2JZex4?autoplay=1">
                             <h2>Lupita Nyong'o is</h2>
                             <h1>Flower</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="edward-norton" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=Dor4XvjA8Wo?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/Dor4XvjA8Wo?autoplay=1">
                             <h2>Edward Norton is</h2>
                             <h1>Soil</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="julia-roberts" class="box col4">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=WmVLcj-XKnM?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/WmVLcj-XKnM?autoplay=1">
                             <h2>Julia Roberts is</h2>
                             <h1>Mother Nature</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="edward-norton" class="box col2">
-                        <a class="various fancybox.iframe" href="https://www.youtube.com/watch?v=Dor4XvjA8Wo?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/Dor4XvjA8Wo?autoplay=1">
                             <h2>Edward Norton is</h2>
                             <h1>Soil</h1>
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
                     <div id="penelope-cruz" class="box col2">
-                        <!--<a class="various fancybox.iframe" href="http://www.youtube.com/watch?v=fwV9OYeGN88?autoplay=1"> -->
-                        <a class="various fancybox.iframe" href="http://www.youtube.com/watch?v=exFnDTu_7dE?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/fwV9OYeGN88?autoplay=1">
                             <h2>Penelope Cruz is</h2>
                             <h1>Water</h1>
                             <i class="fa fa-play"></i>
                         </a>
-                    </div>
-                    <div class="box cold2">
-                        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1">Youtube (iframe)</a>
                     </div>
                 </div>
 
