@@ -7,7 +7,7 @@ jQuery( document ).ready(function($) {
     // Featured videos fancybox
     $('.various').click( function() {
         //$(".various").fancybox({
-        $.fancybox({
+        $(this).fancybox({
             maxWidth	: 800,
             maxHeight	: 600,
             fitToView	: false,
