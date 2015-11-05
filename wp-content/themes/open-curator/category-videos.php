@@ -11,6 +11,13 @@
 
             <h2 class="video-widgettitle"><?php printf( __( 'Featured Videos', 'curation-hue' ) ); ?></h2>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt tempus mattis.
+                Pellentesque pellentesque nulla magna, vitae maximus lectus consectetur quis. Aliquam erat volutpat.
+                Pellentesque metus augue, sollicitudin luctus nulla ullamcorper, faucibus scelerisque justo.
+                Pellentesque pulvinar libero enim, vitae egestas erat maximus id. Morbi sit amet aliquam massa.
+                Vivamus consequat auctor ex, vitae imperdiet tortor commodo nec. Curabitur quis porttitor dui,
+                id tempus nisi. Maecenas in faucibus nisl, nec suscipit tortor. Aenean eget sagittis augue. </p>
+
             <div class="videos-container">
 
                 <div id="part-one" class="work">
