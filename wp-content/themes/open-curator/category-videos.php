@@ -64,7 +64,7 @@
                         </a>
                     </div>
                     <div id="penelope-cruz" class="box col2">
-                        <a class="various fancybox.iframe" href="//www.youtube.com/watch?v=fwV9OYeGN88?autoplay=1">
+                        <a class="various fancybox.iframe" href="http://www.youtube.com/watch?v=fwV9OYeGN88?autoplay=1">
                             <h2>Penelope Cruz is</h2>
                             <h1>Water</h1>
                             <i class="fa fa-play"></i>
