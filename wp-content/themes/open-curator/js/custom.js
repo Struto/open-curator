@@ -4,40 +4,30 @@
 
 jQuery( document ).ready(function($) {
 
+    //
+    $(".various").fancybox({
+        maxWidth	: 800,
+        maxHeight	: 600,
+        fitToView	: false,
+        width		: '70%',
+        height		: '70%',
+        autoSize	: false,
+        closeClick	: false,
+        openEffect	: 'none',
+        closeEffect	: 'none'
+    });
+
 
     // Video Masonry
     var $container = $('.work');
-    //$container.masonry({
+
     $container.packery({
         itemSelector: '.box',
         isAnimated: true
     });
 
 
-    /*
-    $('#masonry').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 1000
-    });
-    */
-
-    // Other JS here
-
-
-
-    // Rotate Featured Home Page Posts
-    /*
-    $(".slides > div:gt(0)").hide();
-
-    setInterval(function() {
-        $('.slides > li:first')
-            .fadeOut(1000)
-            .next()
-            .fadeIn(1000)
-            .end()
-            .appendTo('.slides');
-    },  3000);
-    */
+    // Some scripts here
 
 
 });
