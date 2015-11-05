@@ -10,7 +10,7 @@
         <div class="feat-vids pad">
 
             <div class="entry">
-                <h2 class="video-widgettitle"><?php printf( __( "'Nature is Speaking': Will we listen?", 'curation-hue' ) ); ?></h2>
+                <h2><?php printf( __( "'Nature is Speaking': Will we listen?", 'curation-hue' ) ); ?></h2>
 
                 <p>In a recent video series from Conservation International, A-list actors including Julia Roberts,
                     Harrison Ford and Kevin Spacey personify nature. The aim of the series is to make it clear to
