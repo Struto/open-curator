@@ -11,7 +11,7 @@
 
             <h2 class="video-widgettitle"><?php printf( __( "'Nature is Speaking': Will we listen?", 'curation-hue' ) ); ?></h2>
 
-            <p>In a new video series from Conservation International, A-list actors including Julia Roberts,
+            <p>In a recent video series from Conservation International, A-list actors including Julia Roberts,
                 Harrison Ford and Kevin Spacey personify nature. The aim of the series is to make it clear to
                 everyone that the planet has been evolving for millions of years and will continue to do so,
                 with or without humans. It is our choice to address environmental issues and change our ways
