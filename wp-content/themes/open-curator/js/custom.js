@@ -11,8 +11,8 @@ jQuery( document ).ready(function($) {
             maxWidth	: 800,
             maxHeight	: 600,
             fitToView	: false,
-            width		: '70%',
-            height		: '70%',
+            width		: '90%',
+            height		: '90%',
             autoSize	: false,
             closeClick	: false,
             openEffect	: 'none',
@@ -24,7 +24,6 @@ jQuery( document ).ready(function($) {
 
     // Video Masonry
     var $container = $('.work');
-
     $container.packery({
         itemSelector: '.box',
         isAnimated: true
