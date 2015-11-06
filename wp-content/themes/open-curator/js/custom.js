@@ -5,21 +5,17 @@
 jQuery( document ).ready(function($) {
 
     // Featured videos fancybox
-    //$('.various').click( function() {
-        //$(".various").fancybox({
-        $(".various").fancybox({
-            maxWidth	: 800,
-            maxHeight	: 600,
-            fitToView	: false,
-            width		: '90%',
-            height		: '90%',
-            autoSize	: false,
-            closeClick	: false,
-            openEffect	: 'none',
-            closeEffect	: 'none'
-        });
-        //return false;
-    //});
+    $(".various").fancybox({
+        maxWidth	: 800,
+        maxHeight	: 600,
+        fitToView	: false,
+        width		: '90%',
+        height		: '90%',
+        autoSize	: false,
+        closeClick	: false,
+        openEffect	: 'none',
+        closeEffect	: 'none'
+    });
 
 
     // Video Masonry
@@ -27,6 +23,13 @@ jQuery( document ).ready(function($) {
     $container.packery({
         itemSelector: '.box',
         isAnimated: true
+    });
+
+
+    // Prevent Default on coming soon videos
+    $("a.coming-soon").click(function(e){
+        e.preventDefault();
+
     });
 
 

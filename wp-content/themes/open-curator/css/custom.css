@@ -319,6 +319,12 @@ article.format-video .entry-inner img {
     background-size: cover;
 }
 
+#comingsoon {
+    background-image: url("../img/videos-bg/ice_mosaic_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 

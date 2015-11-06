@@ -28,6 +28,13 @@
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
+                        <div id="julia-roberts" class="box col4">
+                            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/WmVLcj-XKnM?autoplay=1">
+                                <h2>Julia Roberts is</h2>
+                                <h1>Mother Nature</h1>
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
                         <div id="kevin-spacey" class="box col2">
                             <a class="various fancybox.iframe" href="http://www.youtube.com/embed/jBqMJzv4Cs8?autoplay=1">
                                 <h2>Kevin Spacey is</h2>
@@ -56,24 +63,17 @@
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
-                        <div id="julia-roberts" class="box col4">
-                            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/WmVLcj-XKnM?autoplay=1">
-                                <h2>Julia Roberts is</h2>
-                                <h1>Mother Nature</h1>
-                                <i class="fa fa-play"></i>
-                            </a>
-                        </div>
-                        <div id="edward-norton" class="box col2">
-                            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/Dor4XvjA8Wo?autoplay=1">
-                                <h2>Edward Norton is</h2>
-                                <h1>Soil</h1>
-                                <i class="fa fa-play"></i>
-                            </a>
-                        </div>
                         <div id="penelope-cruz" class="box col2">
                             <a class="various fancybox.iframe" href="http://www.youtube.com/embed/fwV9OYeGN88?autoplay=1">
                                 <h2>Penelope Cruz is</h2>
                                 <h1>Water</h1>
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div id="comingsoon" class="box col2">
+                            <a class="coming-soon" href="#">
+                                <h2>More videos</h2>
+                                <h1>Coming soon</h1>
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
