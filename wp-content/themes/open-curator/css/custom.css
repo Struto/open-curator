@@ -264,10 +264,12 @@ article.format-video .entry-inner img {
 
 .col2 h2 {
     margin-top: 30%;
+    margin-bottom: 0;
 }
 
 .col4 h2 {
     margin-top: 18%;
+    margin-bottom: 0;
 }
 
 
