@@ -18,7 +18,7 @@
                         $my_query = new WP_Query( array(
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
-                                'posts_per_page' => 2,
+                                'posts_per_page' => 4,
                                 'page' => $paged,
                                 'tax_query' => array(
                                     array(

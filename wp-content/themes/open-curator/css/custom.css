@@ -132,6 +132,31 @@ a:hover {
 
 
 
+/* ------------------------------------------------------------------------- *
+ *  New Social Icons === IT'S A HACK
+/* ------------------------------------------------------------------------- */
+
+ul.open-share{
+    display: block;
+    float: right;
+    margin-top: -5px;
+    margin-left: 10px;
+    width: 190px;
+}
+
+ul.open-share li {
+    float: left;
+    margin-right: 6px;
+}
+
+ul.open-share li a {
+    border: none;
+    text-decoration: none;
+}
+
+ul.open-share li a img { }
+
+
 
 
 /* ------------------------------------------------------------------------- *
