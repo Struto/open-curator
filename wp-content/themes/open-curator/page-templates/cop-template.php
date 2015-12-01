@@ -18,7 +18,7 @@ Template Name: COP Template
 
                 <?php
                 // show something else if home page
-                if ( is_home() ) {  //return filtered loop
+                if ( is_page('cop-paris') ) {  //return filtered loop
                     $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
                     $my_query = new WP_Query( array(
                             'post_type' => 'post',
