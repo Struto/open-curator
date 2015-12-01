@@ -5,7 +5,7 @@
 jQuery( document ).ready(function($) {
 
     // Featured videos fancybox
-    $(".various").fancybox({
+    $('.various').fancybox({
         maxWidth	: 800,
         maxHeight	: 600,
         fitToView	: false,
@@ -19,17 +19,22 @@ jQuery( document ).ready(function($) {
 
 
     // Video Masonry
-    var $container = $('.work');
-    $container.packery({
-        itemSelector: '.box',
-        isAnimated: true
+
+    jQuery(function($) {
+        var $container = $('.work');
+        $container.packery({
+            itemSelector: '.box',
+            isAnimated: true
+        });
     });
+
+
+    //loadmyVideos();
 
 
     // Prevent Default on coming soon videos
     $("a.coming-soon").click(function(e){
         e.preventDefault();
-
     });
 
 
@@ -37,3 +42,25 @@ jQuery( document ).ready(function($) {
 
 
 });
+
+
+/*
+function loadmyStuff($) {
+    var $container = $('.work');
+    $container.packery({
+        itemSelector: '.box',
+        isAnimated: true
+    });
+}
+*/
+
+/*
+function loadmyVideos() {
+    // Video Masonry
+    var $container = $('.work');
+    $container.packery({
+        itemSelector: '.box',
+        isAnimated: true
+    });
+}
+*/

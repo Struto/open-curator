@@ -34,11 +34,9 @@
             <?php if($showTutorial == '') : ?>
             <div class="latest_blog_posts">
                 <h3>Curation Suite News</h3>
-<p>                <a href="http://CurationSuite.com/blog/" target="_blank">Curation Suite</a></p>
-                <?php //getFeedYBI("http://curationsuite.com/feed/", 5); ?>
+                <?php getFeedYBI("http://curationsuite.com/feed/", 5); ?>
                 <h3>Latest You Brand, Inc. Blog Posts</h3>
-<p>                       <a href="http://YouBrandInc.com/" target="_blank">You Brand, Inc.</a></p>
-                <?php //getFeedYBI("http://youbrandinc.com/feed/", 10); ?>
+                <?php getFeedYBI("http://youbrandinc.com/feed/", 10); ?>
             </div>
             <?php endif; ?>
             </div><!--products_right-->

@@ -466,11 +466,13 @@ article.format-video .entry-inner img {
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
+    list-style-type: none;
     margin: 0;
     text-transform: uppercase;
 }
 
-.home-bottom .widget_alx_posts {
+.home-bottom .widget_alx_posts,
+.home-button .widget_text {
     list-style-type: none !important;
 }
 

@@ -1,15 +1,35 @@
 <?php 
 /*
 	Plugin Name: You Brand, Inc. Products
-	Plugin URI: https://members.youbrandinc.com/dashboard/getting-started/license-keys/
+	Plugin URI: https://members.youbrandinc.com/licensing-plugin/
 	Description: Plugin for licensing and using You Brand, Inc. products
 	Author: You Brand, Inc.
-	Version: 1.56
-	Author URI: http://www.YouBrandInc.com
+	Version: 1.58
+	Author URI: https://www.YouBrandInc.com
 */
 
 // add the menu items( we create a high level You Brand, Inc menu and a license activation menu)
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+define( 'YBI_BASE_PATH', plugin_dir_path(__FILE__) );
+
+if(is_admin()) {
+	if(!class_exists('HTMLObject')) {
+		include_once(YBI_BASE_PATH . 'vendor/ybi/html/HTMLObject.class.php');
+		include_once(YBI_BASE_PATH . 'vendor/ybi/html/Table.class.php');
+		include_once(YBI_BASE_PATH . 'vendor/ybi/html/Row.class.php');
+		include_once(YBI_BASE_PATH . 'vendor/ybi/html/Column.class.php');
+		include_once(YBI_BASE_PATH . 'vendor/ybi/html/Link.class.php');
+	}
+	include_once(YBI_BASE_PATH . 'vendor/ybi/twitter/Status.php');
+	include_once(YBI_BASE_PATH . 'vendor/ybi/twitter/TwitterUser.php');
+	include_once(YBI_BASE_PATH . 'vendor/ybi/twitter/Media.php');
+	include_once(YBI_BASE_PATH . 'vendor/ybi/twitter/Entities.php');
+	include_once(YBI_BASE_PATH . 'vendor/ybi/twitter/Url.php');
+	if(!class_exists('TwitterAPIExchange')) {
+		require_once YBI_BASE_PATH . 'vendor/autoload.php';
+	}
+}
+
 global $ybi_plugin_active;
 $is_ioncube_installed = false;
 
@@ -24,9 +44,7 @@ function ybi_isIoncubeInstalled()
 		
 		$plugin = plugin_basename( __FILE__ );
 		$plugin_data = get_plugin_data( __FILE__, false );
-		//return 	extension_loaded("IonCube Loader");
-		return true;
-		
+		return 	extension_loaded("IonCube Loader");
 	}
 }
 function ybi_checkPHPVersionGood()
@@ -43,16 +61,16 @@ function ioncube_css_js()
 
 	if(in_array($curPage,$loadScriptsArr))
 	{
-		//wp_register_style( 'slider_ioncube', plugins_url('css/cupertino/jquery-ui-1.10.2.custom.css',__FILE__ ));
-		//wp_enqueue_style( 'slider_ioncube' );
-		//wp_register_script( 'jqui-handle', 'http://code.jquery.com/ui/1.10.2/jquery-ui.js','1.10.2');
-		//wp_enqueue_script('jqui-handle');
-		//wp_enqueue_script( 'ioncube-check-scripts', plugins_url('js/ioncube-page.js', __FILE__ ), false, true );
+		wp_register_style( 'slider_ioncube', plugins_url('css/cupertino/jquery-ui-1.10.2.custom.css',__FILE__ ));
+		wp_enqueue_style( 'slider_ioncube' );
+		wp_register_script( 'jqui-handle', 'http://code.jquery.com/ui/1.10.2/jquery-ui.js','1.10.2');
+		wp_enqueue_script('jqui-handle');
+		wp_enqueue_script( 'ioncube-check-scripts', plugins_url('js/ioncube-page.js', __FILE__ ), false, true );
 	}
 
 }
 //add_action( 'admin_init','ioncube_css_js');
-//add_action( 'admin_enqueue_scripts', 'ioncube_css_js' );
+add_action( 'admin_enqueue_scripts', 'ioncube_css_js' );
 				
 if(!function_exists('ybi_product_plugins_activation'))
 {
@@ -68,47 +86,56 @@ $ybi_plugin_active = true;
 define("YBIMULTIPLIER", 1);
 function add_youbrandinc_menu_items()
 {
-
+	//
 	define("YBI_SUPPORT_URL", 'http://members.youbrandinc.com/support/');
 	
 	$allowed_group = 'manage_options';
-	require_once(ABSPATH .'wp-includes/pluggable.php'); // this is here so we can call the user level down below
-	$curation_suite_user_level = '';
-	$options = '';
-	$options = get_option('curation_suite_data');
-	$curation_suite_user_level = $options['curation_suite_user_level'];
+
+			require_once(ABSPATH .'wp-includes/pluggable.php'); // this is here so we can call the user level down below
+			$curation_suite_user_level = '';
+			$options = '';
+			$options = get_option('curation_suite_data');
+			$curation_suite_user_level = $options['curation_suite_user_level'];
 		
-	if($curation_suite_user_level == '')
-		$curation_suite_user_level = 'edit_posts';
-
-    $curation_suite_user_level = 'edit_posts';
-
-    add_menu_page('You Brand, Inc.','You Brand, Inc.',$curation_suite_user_level,'youbrandinc','youbrandinc_products_page',plugins_url('youbrandinc_products/i/you-brand-guys-16.png'),82.44);
+			if($curation_suite_user_level == '')
+				$curation_suite_user_level = 'edit_posts';	
+	
+		add_menu_page('You Brand, Inc.','You Brand, Inc.',$curation_suite_user_level,'youbrandinc','youbrandinc_products_page',plugins_url('youbrandinc_products/i/you-brand-guys-16.png'));
 		// this removes the main menu from being in the submenu
-	add_submenu_page('youbrandinc','','',$curation_suite_user_level,'youbrandinc','youbrandinc_products_page');
-	// this adds the base products page, but we wanted to rename the submenu item support/news
-	add_submenu_page('youbrandinc', 'Support & News', 'Support & News', 'activate_plugins', 'youbrandinc-support-news', 'youbrandinc_products_page');
+		add_submenu_page('youbrandinc','','',$curation_suite_user_level,'youbrandinc','youbrandinc_products_page');
+		// this adds the base products page, but we wanted to rename the submenu item support/news
+		add_submenu_page('youbrandinc', 'Support & News', 'Support & News', 'activate_plugins', 'youbrandinc-support-news', 'youbrandinc_products_page');
+	
+		if(get_option('ybi_super_admin') == "on")
+		{
+			add_submenu_page('youbrandinc', 'Advanced Setup', 'Advanced Setup', 'activate_plugins', 'youbrandinc-adv-setup', 'youbrandinc_adv_setup_page');
+			add_action('admin_bar_menu', 'ybi_adv_custom_toolbar_links', 999);
+		}
 
-	if(get_option('ybi_super_admin') == "on")
-	{
-		add_submenu_page('youbrandinc', 'Advanced Setup', 'Advanced Setup', 'activate_plugins', 'youbrandinc-adv-setup', 'youbrandinc_adv_setup_page');
-		add_action('admin_bar_menu', 'ybi_adv_custom_toolbar_links', 999);
-	}
+		// check to see if we have any plugins that require ioncube
+		$anyPluginRequireIoncube = isAnyYBIPluginThatRequiresIoncubeActive();
+		$showAnalytics = true;
+		// is ioncube installed and is there any plugins activated that require it
+		if(ybi_isIoncubeInstalled() && $anyPluginRequireIoncube && ybi_checkPHPVersionGood())
+		{
+			//ioncube is activated and a plugin requires licensing, so show the page
+			add_submenu_page('youbrandinc', 'License Activation', 'License Activation', 'activate_plugins', 'youbrandinc-license', 'youbrandinc_license_activation_page');
+		}
+		else
+		{
+			if($anyPluginRequireIoncube)
+			{
+				// there's a plugin that requires ioncube, this will be the only menu item
+				add_submenu_page('youbrandinc', 'Install Ioncube', '<i class="fa fa-exclamation-triangle" style="color: #C80000;"></i>  Install Ioncube', 'activate_plugins', 'youbrandinc-install-ioncube', 'youbrandinc_install_ioncube_page');
+				$showAnalytics = false;
 
-	// check to see if we have any plugins that require ioncube
-	//$anyPluginRequireIoncube = isAnyYBIPluginThatRequiresIoncubeActive();
-	$showAnalytics = true;
-	// is ioncube installed and is there any plugins activated that require it
+			}
+		}
+		// do we show the analytics menu item? Only if ioncube is not required, see above. This also will show if they have any of our themes installed
+		if($showAnalytics)
+			add_submenu_page('youbrandinc', 'Analytics and Shares', 'Analytics and Shares', 'activate_plugins', 'youbrandinc-analytic-share', 'youbrandinc_analytic_share_page');
 
-	//ioncube is activated and a plugin requires licensing, so show the page
-	add_submenu_page('youbrandinc', 'License Activation', 'License Activation', 'manage_options', 'youbrandinc-license', 'youbrandinc_license_activation_page');
-
-
-	// do we show the analytics menu item? Only if ioncube is not required, see above. This also will show if they have any of our themes installed
-	if($showAnalytics)
-		add_submenu_page('youbrandinc', 'Analytics and Shares', 'Analytics and Shares', 'activate_plugins', 'youbrandinc-analytic-share', 'youbrandinc_analytic_share_page');
-
-	//add_submenu_page('youbrandinc', 'Install Ioncube', '<i class="fa fa-exclamation-triangle" style="color: #C80000;"></i>  Install Ioncube', 'administrator', 'youbrandinc-install-ioncube', 'youbrandinc_install_ioncube_page');
+		//add_submenu_page('youbrandinc', 'Install Ioncube', '<i class="fa fa-exclamation-triangle" style="color: #C80000;"></i>  Install Ioncube', 'administrator', 'youbrandinc-install-ioncube', 'youbrandinc_install_ioncube_page');
 }
 add_action('admin_menu', 'add_youbrandinc_menu_items', 1);
 
@@ -151,40 +178,41 @@ function youbrandinc_adv_setup_page()
 
 function yb_products_cs_js()
 {
-	
-	$curPage = $_GET["page"];
-	$loadScriptsArr = array('youbrandinc','youbrandinc-support-news','youbrandinc-install-ioncube','youbrandinc-adv-setup','youbrandinc-analytic-share','curation_suite_display_settings');
+	wp_register_style('yb_products_cs_js', plugins_url('css/ybi-products-style.css',__FILE__ ));
+	wp_enqueue_style('yb_products_cs_js');
 
-	if(in_array($curPage,$loadScriptsArr))
-	{
-		wp_register_style('yb_products_cs_js', plugins_url('css/ybi-products-style.css',__FILE__ ));
-		wp_enqueue_style('yb_products_cs_js');
-	}
 }
-add_action( 'admin_init','yb_products_cs_js');
-
-//if(is_admin())
-//{
-//	wp_register_style('yb_products_cs_js', plugins_url('css/ybi-products-style.css',__FILE__ ));
-//	wp_enqueue_style('yb_products_cs_js');
-	wp_register_style('fontawesome', plugins_url('font-awesome/css/font-awesome.min.css',__FILE__,'4.3' ));
+add_action( 'admin_enqueue_scripts','yb_products_cs_js');
+function ybi_font_awesome_cs_js()
+{
+	wp_register_style('fontawesome', plugins_url('font-awesome/css/font-awesome.min.css',__FILE__,'4.4.0' ));
 	wp_enqueue_style('fontawesome');
-//}
+}
+add_action( 'admin_enqueue_scripts','ybi_font_awesome_cs_js'); // include in admin
+add_action( 'wp_enqueue_scripts','ybi_font_awesome_cs_js'); // include in front end for SQT
 
-  
 // include the license check code
+if(ybi_isIoncubeInstalled())
+{
+	if (ybi_checkPHPVersionGood())
+		require_once('license-check.php');
+}
 
-//if (ybi_checkPHPVersionGood())
-require_once('license-check.php');
+$un_encrpted_version ='';
+if (get_option('ybi_turn_off_ioncube_check') == 'yes')
+{
+		require_once('license-check.php');
+		$un_encrpted_version = '_unc';
+}
 
 
 
 $ybi_license_key = 'nokeyrequired';
 require  dirname(__FILE__) . '/plugin-updates/plugin-update-checker.php';
 	$YBIProductUpdateChecker = PucFactory::buildUpdateChecker(
-	'http://members.youbrandinc.com/wp-update-server/?action=get_metadata&slug=youbrandinc_products&license_key='.$ybi_license_key, //Metadata URL.
+	'http://members.youbrandinc.com/wp-update-server/?action=get_metadata&slug=youbrandinc_products'.$un_encrpted_version.'&license_key='.$ybi_license_key, //Metadata URL.
 	__FILE__, //Full path to the main plugin file.
-	'youbrandinc_products' //Plugin slug. Usually it's the same as the name of the directory.
+	'youbrandinc_products'.$un_encrpted_version //Plugin slug. Usually it's the same as the name of the directory.
 	);
 
 // checks to see if any plugin is activae that requires ioncube
@@ -233,7 +261,7 @@ function isYBIPluginActive($inPluginName)
 // we apply some minor styling to the customizer page
 function ybi_theme_customize_style() {
 	//we probably should check here to ensure they are only running our themes
-    //wp_enqueue_style('ybi_custom_customizer', plugins_url('css/admin-style.css',__FILE__ ));
+    wp_enqueue_style('ybi_custom_customizer', plugins_url('css/admin-style.css',__FILE__ ));
 }
 add_action( 'customize_controls_enqueue_scripts', 'ybi_theme_customize_style' );
 
@@ -490,7 +518,21 @@ function ybi_adv_custom_toolbar_links($wp_admin_bar) {
 	);
 	$wp_admin_bar->add_node($args);
 }
+function ybi_startsWith($haystack, $needle)
+{
+	$length = strlen($needle);
+	return (substr($haystack, 0, $length) === $needle);
+}
 
+function ybi_endsWith($haystack, $needle)
+{
+	$length = strlen($needle);
+	if ($length == 0) {
+		return true;
+	}
+
+	return (substr($haystack, -$length) === $needle);
+}
 
 
 function getServerCheckIframe($inName, $inCheckType)

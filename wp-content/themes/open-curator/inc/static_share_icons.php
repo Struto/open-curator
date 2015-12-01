@@ -24,7 +24,7 @@
         </a>
     </li>
     <li>
-        <a href="http://www.opentoinvest.com/images/Icons/social-flipboard-icon.png" target="_blank">
+        <a href="https://flipboard.com/@OPENOpportu5pj2" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri();?>/img/social/social-flipboard-icon.png" alt="Flipboard" />
         </a>
     </li>

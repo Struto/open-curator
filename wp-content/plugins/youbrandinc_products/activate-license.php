@@ -9,6 +9,8 @@
 		if(isYBIPluginActive($product->active_name)) 
 		{
 			$spbasObj = $product->spbas_obj;
+
+
 			if($spbasObj->errors)
 				$allErrors .= '<li><strong>'. $product->name.'</strong> '.$spbasObj->errors.'</li>';
 		}
@@ -29,6 +31,8 @@
 			if(isYBIPluginActive($product->active_name)) 
 			{
 				$spbasObj = $product->spbas_obj;
+
+
 				if(!$spbasObj->errors && $spbasObj->license_key):
 					  $updateMessages .= '<p><b>'. $product->name . ' license activated successfully!</b></p>';
 				endif;            
@@ -61,6 +65,9 @@ foreach($AllProductsArr as $product)
 	if(isYBIPluginActive($product->active_name)) 
 	{
 		$spbasObj = $product->spbas_obj;
+		//$spbasObj->clear_cache_local_key(true);
+		//var_dump($spbasObj);
+
 ?>
 		<p>	
         	<b><?php echo _e($product->name); ?>: </b> 
@@ -87,24 +94,3 @@ foreach($AllProductsArr as $product)
     </div>
 	</form>
 </div><!--wrap yo-->
-<script id="IntercomSettingsScriptTag">
-  window.intercomSettings = {
-    // TODO: The current logged in user's full name
-    name: "<?php 
-			global $current_user;
-    	get_currentuserinfo();
-	echo $current_user->user_firstname . ' ' . $current_user->user_lastname; ?>",
-    // TODO: The current logged in user's email address.
-
-    email: "<?php echo bloginfo('admin_email'); ?>",
-	'site_url' : "<?php echo bloginfo('url'); ?>",
-    // TODO: The current logged in user's sign-up date as a Unix timestamp.
-    created_at: <?php echo time(); ?>,
-	PHP_uname: "<?php echo php_uname(); ?>",
-	PHP_OS: "<?php echo PHP_OS; ?>",
-	PAGE: "Activate License",
-	
-    app_id: "zmxie9mk"
-  };
-</script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://static.intercomcdn.com/intercom.v1.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>

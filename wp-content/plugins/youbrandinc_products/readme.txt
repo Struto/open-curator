@@ -1,11 +1,11 @@
 === You Brand, Inc. Products Plugin ===
 Contributors: You Brand, Inc.
 Tags: licensing, curation traffic, social quote traffic, curation suite
-Requires at least: 3.5
-Tested up to: 4.2
-Stable tag: 1.56
+Requires at least: 3.5+
+Tested up to: 4.4
+Stable tag: 1.58
 License: See Members area
-License URI: http://members.youbrandinc.com
+License URI: https://members.youbrandinc.com
 
 The You Brand, Inc. Products Plugin allows you to easily activate all products from You Brand, Inc.
 
@@ -26,19 +26,25 @@ Install as usual for any plugin. Please note Ioncube and PHP5.3+ is required. Te
 Visit the members area at http://members.youbrandinc.com to get full tutorials and walk throughs.
 
 == Changelog ==
+= 1.58 =
+* Update to common shared assets for Twitter search
+* change in version to ensure Beta users recieve this update
+
+= 1.57 =
+* update to our shared Twitter library for additional elements when searching Twitter
+* new shared theme added for future functionality
 
 = 1.56 =
-* Added latest version of Font Awesome
-* Fixes for Multi-Site installs
-* added a few more behind the scenes things
+* Font awesome script change, now there are 2 includes, one for WP front end and one for the Admin section
+* Added new HTML object Link for shared assets
+* Fixed a script include error, this was a minor error but it wasn't correct so we fixed it in this version.
 
 = 1.55 =
-* hotfix for a few plugin conflicts
-* updated to the latest version of Font Awesome
-* Ioncube changes
-* Group changes for Curation Suite functionality.
+ * latest version of font awesome
+ * libraries for shared assets
+ * libraries for Curaton Suite v2.0
 
-= 1.53 = 
+= 1.53 =
 * final fixes for all licensing issues. All is good now!
 
 = 1.52 = 

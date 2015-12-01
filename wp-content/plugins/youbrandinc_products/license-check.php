@@ -684,6 +684,8 @@ class spbas_youbrandinc
 	* Read in a new local key from the database.
 	* 
 	* @return string
+	 * $spbas->read_query=array('local_key' => get_option($inProduct->prefix.'_license_local_key'));
+	 *
 	*/
 	function db_read_local_key()
 		{

@@ -19,14 +19,14 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );        // default css
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/css/custom.css' );    // child theme css
 
-    // load masonry js on videos catefory only
-    if ( is_category('videos') ) {
+    // load masonry js on videos or homepage only
+    if ( is_category('videos') || ( is_home() ) ) {
         //wp_enqueue_script('masonry-js', get_stylesheet_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ) );
-        wp_enqueue_script('packery-js', get_stylesheet_directory_uri() . '/js/packery.pkgd.min.js', array( 'jquery' ) );
+        wp_enqueue_script('packery-js', get_stylesheet_directory_uri() . '/js/packery.pkgd.min.js', array( 'jquery' ), '3.3.2', true );
     }
 
-    // custom scripts
-    wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ) );
+    // custom scripts | load globally
+    wp_enqueue_script('custom-scripts', get_stylesheet_directory_uri() . '/js/custom.js', array( 'packery-js' ), '1.0.0', true );
 }
 
 
