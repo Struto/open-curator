@@ -53,7 +53,7 @@ Template Name: COP Template
 
                 <?php } ?>
 
-                <?php wp_reset_query();     // reset loop ?>
+                <?php //wp_reset_query();     // reset loop ?>
 
             <?php endif; ?>
 
