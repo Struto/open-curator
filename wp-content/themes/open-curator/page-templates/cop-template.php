@@ -16,6 +16,7 @@ Template Name: COP Template
 
             <?php if ( have_posts() ) : ?>
 
+                <h3>COP Articles</h3>
                 <?php
                 // show something else if home page
                 if ( is_page('cop-paris') ) {  //return filtered loop
@@ -52,7 +53,14 @@ Template Name: COP Template
 
                 <?php } ?>
 
-                
+                <?php wp_reset_query();     // reset loop ?>
+
+            <?php endif; ?>
+
+
+
+
+                <!--
                 <?php else :  // show something else if not home page ?>
                     <div class="post-list group">
 
@@ -64,7 +72,7 @@ Template Name: COP Template
                     <?php get_template_part('inc/pagination'); ?>
 
                 <?php endif; ?>
-
+                -->
 
         </div><!--/.pad-->
 
