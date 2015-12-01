@@ -11,22 +11,44 @@ Template Name: COP Template
 
         <div class="pad group">
 
-            <?php while ( have_posts() ): the_post(); ?>
+            <?php if ( have_posts() ) : ?>
 
-                <article <?php post_class('group'); ?>>
+                <?php
+                // show something else if home page
+                if ( is_home() ) {  //return filtered loop
+                    $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+                    $my_query = new WP_Query( array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 4,
+                            'page' => $paged,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'category',
+                                    'field'    => 'slug',
+                                    'terms'    => array('cop'),
+                                ),
+                            ),
+                        )
+                    );
+                ?>
 
-                    <?php get_template_part('inc/page-image'); ?>
 
-                    <div class="entry">
-                        <?php the_content(); ?>
-                        <div class="clear"></div>
-                    </div><!--/.entry-->
 
-                </article>
 
-                <?php if ( ot_get_option('page-comments') != '' ) { comments_template('/comments.php',true); } ?>
+                <div class="post-list group">
+                    <?php //$i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
+                    <?php $i = 1; echo '<div class="post-row">'; while ( $my_query->have_posts() ): $my_query->the_post(); ?>
 
-            <?php endwhile; ?>
+                        <?php get_template_part('content'); ?>
+                        <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
+                </div><!--/.post-list-->
+
+
+            <?php else :  ?>
+                <?php echo "Empty"; ?>
+
+            <?php endif;?>
 
         </div><!--/.pad-->
 
