@@ -16,12 +16,12 @@ Template Name: COP Template
 
             <?php if ( have_posts() ) : ?>
 
-                <h3>COP Articles</h3>
+                <h2 class="widgettitle">COP Articles</h2>
                 <?php
                 // show something else if home page
                 if ( is_page('cop-paris') ) {  //return filtered loop
                     $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-                    $my_query = new WP_Query( array(
+                    $cop_news_query = new WP_Query( array(
                             'post_type' => 'post',
                             'post_status' => 'publish',
                             'posts_per_page' => 4,
@@ -30,7 +30,7 @@ Template Name: COP Template
                                 array(
                                     'taxonomy' => 'category',
                                     'field'    => 'slug',
-                                    'terms'    => array('cop'),
+                                    'terms'    => array('cop-news'),
                                 ),
                             ),
                         )
@@ -39,7 +39,7 @@ Template Name: COP Template
 
                     <div class="post-list group">
                         <?php //$i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
-                        <?php $i = 1; echo '<div class="post-row">'; while ( $my_query->have_posts() ): $my_query->the_post(); ?>
+                        <?php $i = 1; echo '<div class="post-row">'; while ( $cop_news_query->have_posts() ): $cop_news_query->the_post(); ?>
 
                             <?php get_template_part('content'); ?>
                             <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
@@ -53,9 +53,45 @@ Template Name: COP Template
 
                 <?php } ?>
 
-                <?php //wp_reset_query();     // reset loop ?>
+                <?php wp_reset_query();     // reset loop ?>
 
             <?php endif; ?>
+
+
+
+            <!-- COP Videos -->
+            <div class="cop-videos">
+
+                <h2 class="widgettitle">COP Videos</h2>
+                <?php
+                    $cop_videos = new WP_Query( array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 4,
+                            'page' => $paged,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'category',
+                                    'field'    => 'slug',
+                                    'terms'    => array('cop-news'),
+                                ),
+                            ),
+                        )
+                    );
+                ?>
+
+                <div class="post-list group">
+                    <?php //$i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
+                    <?php $i = 1; echo '<div class="post-row">'; while ( $cop_videos->have_posts() ): $cop_videos->the_post(); ?>
+
+                        <?php get_template_part('content'); ?>
+                        <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
+                </div><!--/.post-list-->
+
+
+                <?php //$cop_videos; ?>
+
+            </div>
 
 
 
