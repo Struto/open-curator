@@ -45,29 +45,29 @@ Template Name: COP Template
                     </div><!--/.post-list-->
 
 
-                          <!-- Custom Homepage Bottom Widget Area-->
+                    <!-- Custom Homepage Bottom Widget Area
                     <div class="home-bottom">
                     <?php
-                    dynamic_sidebar( 'homebotttomarea' );
-                } else {
-                    echo " ";
-                } ?>
-                </div>
-                <!-- Homepage end of additional widgets -->
-                <?php //endif; ?>
+                        dynamic_sidebar( 'homebotttomarea' );
+                    } else {
+                        echo " ";
+                    } ?>
+                    </div>
+                    -->
+                }
 
 
-            <?php else :  // show something else if not home page ?>
-                <div class="post-list group">
+                <?php else :  // show something else if not home page ?>
+                    <div class="post-list group">
 
-                    <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
-                        <?php get_template_part('content'); ?>
-                        <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
-                </div><!--/.post-list-->
+                        <?php $i = 1; echo '<div class="post-row">'; while ( have_posts() ): the_post(); ?>
+                            <?php get_template_part('content'); ?>
+                            <?php if($i % 2 == 0) { echo '</div><div class="post-row">'; } $i++; endwhile; echo '</div>'; ?>
+                    </div><!--/.post-list-->
 
-                <?php get_template_part('inc/pagination'); ?>
+                    <?php get_template_part('inc/pagination'); ?>
 
-            <?php endif; ?>
+                <?php endif; ?>
 
 
         </div><!--/.pad-->
