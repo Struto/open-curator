@@ -45,18 +45,14 @@ Template Name: COP Template
                     </div><!--/.post-list-->
 
 
-                    <!-- Custom Homepage Bottom Widget Area
+                    <!-- Custom Homepage Bottom Widget Area -->
                     <div class="home-bottom">
-                    <?php
-                        dynamic_sidebar( 'homebotttomarea' );
-                    } else {
-                        echo " ";
-                    } ?>
+                    <?php echo " "; ?>
                     </div>
-                    -->
-                }
 
+                <?php } ?>
 
+                
                 <?php else :  // show something else if not home page ?>
                     <div class="post-list group">
 
