@@ -73,7 +73,7 @@ Template Name: COP Template
                                 array(
                                     'taxonomy' => 'category',
                                     'field'    => 'slug',
-                                    'terms'    => array('cop-news'),
+                                    'terms'    => array('cop-videos'),
                                 ),
                             ),
                         )
