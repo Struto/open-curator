@@ -94,9 +94,6 @@ Template Name: COP Template
             </div>
 
 
-
-
-
         </div><!--/.pad-->
 
     </section><!--/.content-->

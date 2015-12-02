@@ -15,26 +15,33 @@
         <?php get_template_part('inc/page-title'); ?>
 
 
-        <!-- Featured external YouTube videos -->
+        <!-- Featured COP 21 content -->
         <div class="cop21-featured pad">
 
             <div class="featured">
-                <?php query_posts('p=40'); ?>
-                <?php while (have_posts()) : the_post(); ?>
+                <?php
+                    $args = array(
+                        'p' => 750, // id of a page, post, or custom type
+                        'post_type' => 'any');
+                    $my_posts = new WP_Query($args);
+                ?>
+                <?php while ($my_posts->have_posts()) : $my_posts->the_post(); ?>
                     <div class="entry">
                         <h2><?php the_title(); ?></h2>
                         <?php the_content(); ?>
                     </div>
-                <?php endwhile;?>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
 
         </div>
 
 
-        <!-- Rest of the videos or default categories -->
-        <div class="pad group">
 
-            <h2 class="video-widgettitle"><?php printf( __( 'COP21 Featured', 'curation-hue' ) ); ?></h2>
+        <?php //get_template_part('inc/page-title'); ?>
+
+        <div class="pad group">
 
             <?php if ((category_description() != '') && !is_paged()) : ?>
                 <div class="notebox">
